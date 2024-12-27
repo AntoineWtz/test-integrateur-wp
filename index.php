@@ -10,7 +10,7 @@
 
 <body>
     <?php
-    $uploads = wp_upload_dir(); // Récupère les informations du dossier "uploads"
+    $uploads = wp_upload_dir();
     ?>
     <header class="bg-white p-4 shadow-md">
         <div class="flex items-center justify-between">
@@ -29,8 +29,8 @@
     <main>
         <section class="relative bg-contain bg-center"
             style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/fond-couleur.png');">
+            <!-- Encarts -->
             <div class="grid grid-cols-1 gap-4">
-                <!-- Encarts -->
                 <div class="relative rounded-xl overflow-hidden mt-4 ml-4 mr-4">
                     <img src="<?php echo $uploads['baseurl']; ?>/2024/12/peinture.png" alt="Peinture & Décoration" class="w-full h-56 object-cover opacity-80">
                     <div class="absolute bottom-4 left-4 right-0 p-2">
@@ -103,7 +103,7 @@
                     </h3>
                 </div>
             </div>
-            <!-- Texte descriptif -->
+            <!-- Texte -->
             <div class="pt-2">
                 <p class="text-ac-purple text-md uppercase"> Vivre la couleur est au quotidien est essentiel !</p>
                 <p class="mt-4 text-gray-700 text-sm leading-6">
@@ -126,20 +126,17 @@
             <div class="relative z-10 py-8 mx-4 my-8">
                 <!-- Images avec alignement particulier -->
                 <div class="flex items-center justify-center gap-4">
-                    <!-- Image de gauche -->
                     <div class="w-40 h-60 rounded-xl rounded-bl-[250px] overflow-hidden translate-y-8">
                         <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie.jpg" alt="Vitrerie 1" class="w-full h-full object-cover">
                     </div>
-                    <!-- Image de droite -->
                     <div class="w-40 h-60 rounded-xl rounded-tr-[250px] overflow-hidden">
                         <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie2.png" alt="Vitrerie 2" class="w-full h-full object-cover">
                     </div>
                 </div>
-
                 <!-- Texte -->
                 <div class="mt-12">
-                    <h3 class="text-3xl font-bold text-gray-900 text-center">La Vitrerie</h3>
-                    <p class="text-ac-blue text-md mt-4 uppercase font-bold">Remplacement & Rénovation de vitres</p>
+                    <h3 class="text-3xl text-center">La Vitrerie</h3>
+                    <p class="text-ac-blue text-md mt-4 uppercase">Remplacement & Rénovation de vitres</p>
                     <p class="text-gray-700 text-sm mt-4 leading-6">
                         Verres simples, verres de verrières, verres de marquises, verres imprimés, verres feuilletés,
                         verres de fenêtres de toit, doubles vitrages, miroirs...
@@ -155,6 +152,43 @@
             </div>
         </section>
 
+        <!-- Réalisations -->
+        <section class="py-8 px-4" style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/fond-couleur2.png'); background-size: cover; background-position: center;">
+            <!-- Texte -->
+            <div class="text-white">
+                <h1 class="text-3xl text-center mb-4">Nos Réalisations</h1>
+                <p class="text-ac-yellow text-md uppercase">
+                    Nous vous accompagnons dans vos projets de peinture, rénovation & décoration !
+                </p>
+                <p class="text-md mt-4 leading-6">
+                    Plus d’hésitations : découvrez en images un petit aperçu de nos réalisations pour vous inspirer et mieux vous projeter dans vos futurs projets !
+                </p>
+            </div>
+
+            <!-- Images -->
+            <div class="grid grid-cols-1 gap-6 mt-8">
+                <div class="relative rounded-xl overflow-hidden">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations1.jpg" alt="Réalisation 1" class="w-full h-64 object-cover">
+                </div>
+                <div class="relative rounded-xl overflow-hidden">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations2.jpg" alt="Réalisation 2" class="w-full h-64 object-cover">
+                </div>
+                <div class="relative rounded-xl overflow-hidden">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations3.jpg" alt="Réalisation 3" class="w-full h-64 object-cover">
+                </div>
+            </div>
+
+            <!-- Boutons -->
+            <div class="flex items-center justify-between gap-4 mt-8 px-0">
+                <a href="#" class="flex-1 bg-ac-yellow text-ac-darkblue text-xs font-bold py-3 px-1 rounded-lg text-center hover:bg-white hover:text-ac-darkblue transition">
+                    J'en veux +
+                </a>
+                <a href="#" class="flex-1 flex items-center justify-center bg-transparent border-[3px] border-ac-yellow text-ac-yellow text-xs font-bold py-2 px-1 rounded-lg hover:bg-white hover:text-ac-yellow transition">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/instagram-logo.png" alt="Logo Instagram" class="w-5 h-5 mr-2">
+                    Suivez-nous !
+                </a>
+            </div>
+        </section>
 
 
     </main>

@@ -11,9 +11,10 @@ module.exports = {
         'ac-orange': '#EF780A',
         'ac-purple': '#662483',
         'ac-yellow': '#FABF33',
-        'ac-blue': '#1C70B8',
         'ac-green': '#00A39B',
+        'ac-blue': '#1C70B8',
         'ac-lightblue': '#E1EFFE',
+        'ac-darkblue': '#0F0C24',
       },
       fontFamily: {
         bauhaus: ['"Bauhaus"', 'sans-serif'],
