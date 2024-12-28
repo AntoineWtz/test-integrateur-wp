@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     './index.php',
+    './assets/**/*.php',
     './**/*.php'
   ],
   theme: {
@@ -18,7 +19,7 @@ module.exports = {
       },
       fontFamily: {
         bauhaus: ['"Bauhaus"', 'sans-serif'],
-        jakarta: ['"Plus Jakarta Sans"', 'sans-serif'],
+        plusJakarta: ['"Plus Jakarta Sans"', 'sans-serif'],
       },
     },
   },

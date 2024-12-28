@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Intégrateur WP</title>
-    <?php wp_head(); ?>
+    <!-- <?php wp_head(); ?> -->
 </head>
 
 <body>
     <?php
     $uploads = wp_upload_dir();
     ?>
-    <header class="bg-white p-4 shadow-md">
+    <header class="fixed top-0 left-0 w-full bg-white p-4 shadow z-50">
         <div class="flex items-center justify-between">
             <!-- Logo -->
             <div>
@@ -27,32 +27,32 @@
     </header>
 
     <main>
-        <section class="relative bg-contain bg-center"
+        <section class="relative bg-contain bg-center pt-20"
             style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/fond-couleur.png');">
             <!-- Encarts -->
             <div class="grid grid-cols-1 gap-4">
                 <div class="relative rounded-xl overflow-hidden mt-4 ml-4 mr-4">
                     <img src="<?php echo $uploads['baseurl']; ?>/2024/12/peinture.png" alt="Peinture & Décoration" class="w-full h-56 object-cover opacity-80">
                     <div class="absolute bottom-4 left-4 right-0 p-2">
-                        <p class="text-white text-3xl">Peinture & Décoration</p>
+                        <p class="text-white text-3xl font-bauhaus">Peinture & Décoration</p>
                     </div>
                 </div>
                 <div class="relative  rounded-xl overflow-hidden ml-4 mr-4">
                     <img src="<?php echo $uploads['baseurl']; ?>/2024/12/revetement.jpg" alt="Revêtements Sols & Murs" class="w-full h-56 object-cover opacity-80">
                     <div class="absolute bottom-4 left-4 right-0 p-2">
-                        <p class="text-white text-3xl">Revêtements Sols & Murs</p>
+                        <p class="text-white text-3xl font-bauhaus">Revêtements Sols & Murs</p>
                     </div>
                 </div>
                 <div class="relative rounded-xl overflow-hidden ml-4 mr-4">
                     <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie.jpg" alt="La Vitrerie" class="w-full h-56 object-cover opacity-80">
                     <div class="absolute bottom-4 left-4 right-0 p-2">
-                        <p class="text-white text-3xl">La Vitrerie</p>
+                        <p class="text-white text-3xl font-bauhaus">La Vitrerie</p>
                     </div>
                 </div>
                 <div class="relative rounded-xl overflow-hidden mb-4 ml-4 mr-4">
                     <img src="<?php echo $uploads['baseurl']; ?>/2024/12/renovation.jpg" alt="Rénovation & Remise en état" class="w-full h-56 object-cover opacity-80">
                     <div class="absolute bottom-4 left-4 right-0 p-2">
-                        <p class="text-white text-3xl">Rénovation & Remise en état</p>
+                        <p class="text-white text-3xl font-bauhaus">Rénovation & Remise en état</p>
                     </div>
                 </div>
             </div>
@@ -60,7 +60,7 @@
 
         <!-- Maison d'Expérience -->
         <section class="text-center py-8 bg-white">
-            <h2 class="text-4xl font-bold text-gray-900 mb-6">Maison d'expérience</h2>
+            <h2 class="text-4xl font-bold text-gray-900 mb-6 font-bauhaus">Maison d'expérience</h2>
             <p class="inline-block bg-ac-green font-thin text-white text-lg px-3 py-1 rounded-full">- depuis 1971 -</p>
             <p class="mt-4 text-gray-700 text-base px-6 uppercase">
                 Notre force le conseil et un accompagnement privilégié sur mesure, adapté à vos envies et votre budget.
@@ -112,7 +112,7 @@
             </div>
             <!-- Bouton -->
             <div class="text-center mt-6 mb-4">
-                <a href="#" class="bg-ac-purple text-white text-sm font-bold py-2 px-20 rounded-lg hover:bg-ac-orange transition">
+                <a href="#" class="bg-ac-purple font-bauhaus text-white text-sm font-bold py-2 px-20 rounded-lg hover:bg-ac-orange transition">
                     découvrir
                 </a>
             </div>
@@ -124,9 +124,9 @@
             <div class="absolute inset-x-0 top-36 mx-auto w-full h-32 bg-ac-lightblue -z-10"></div>
 
             <div class="relative z-10 py-8 mx-4 my-8">
-                <!-- Images avec alignement particulier -->
-                <div class="flex items-center justify-center gap-4">
-                    <div class="w-40 h-60 rounded-xl rounded-bl-[250px] overflow-hidden translate-y-8">
+                <!-- Images  -->
+                <div class="flex items-center justify-center gap-2">
+                    <div class="w-40 h-60 rounded-xl rounded-bl-[250px] overflow-hidden translate-y-12">
                         <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie.jpg" alt="Vitrerie 1" class="w-full h-full object-cover">
                     </div>
                     <div class="w-40 h-60 rounded-xl rounded-tr-[250px] overflow-hidden">
@@ -197,7 +197,7 @@
                 <div class="flex justify-center">
                     <img src="<?php echo $uploads['baseurl']; ?>/2024/12/logo-mobile.png" alt="Logo" class="h-20">
                 </div>
-                <div class="mt-8 space-y-6">
+                <div class="m-8 space-y-6">
                     <!-- Adresse -->
                     <div class="flex items-center gap-4">
                         <div class="w-8 h-8 bg-ac-yellow rounded-lg flex items-center justify-center">
@@ -230,13 +230,12 @@
                 <!-- Contactez-nous -->
                 <div class="text-center mt-6">
                     <p class="text-black text-sm mb-2">Une question ? Un conseil…</p>
-                    <a href="#" class="bg-ac-blue text-white text-sm font-bold py-3 px-6 rounded-lg inline-flex items-center hover:bg-ac-darkblue transition">
-                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-mail.png" alt="Contactez-nous" class="w-5 h-5 mr-2">
+                    <a href="#" class="bg-ac-blue text-white text-sm font-bold py-3 px-12 rounded inline-flex items-center hover:bg-ac-darkblue transition">
+                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-mail.png" alt="Contactez-nous" class="w-5 h-auto mr-2">
                         Contactez-nous
                     </a>
                 </div>
             </div>
-
 
             <!-- Section images finales -->
             <div class="bg-ac-darkblue py-4 px-4">
@@ -261,7 +260,7 @@
                     </div>
                 </div>
                 <!-- Mentions légales -->
-                <div class="text-center text-sm text-white mt-6 uppercase">
+                <div class="text-center text-xs text-white mt-8 uppercase">
                     <p>Mentions légales</p>
                     <p>Politiques de confidentialités</p><br>
                     <p>&copy; 2024 – Tous droits réservés</p>
