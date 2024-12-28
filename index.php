@@ -190,6 +190,90 @@
             </div>
         </section>
 
+        <!-- Footer -->
+        <footer>
+            <!-- Section coordonnées -->
+            <div class="text-ac-darkblue py-8 px-4">
+                <div class="flex justify-center">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/logo-mobile.png" alt="Logo" class="h-20">
+                </div>
+                <div class="mt-8 space-y-6">
+                    <!-- Adresse -->
+                    <div class="flex items-center gap-4">
+                        <div class="w-8 h-8 bg-ac-yellow rounded-lg flex items-center justify-center">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-localisation.png" alt="Adresse" class="w-auto h-4">
+                        </div>
+                        <p class="text-sm leading-relaxed">
+                            16 Rue du Général Renault<br>
+                            37000 Tours
+                        </p>
+                    </div>
+                    <!-- Téléphone -->
+                    <div class="flex items-center gap-4">
+                        <div class="w-8 h-8 bg-ac-green rounded-lg flex items-center justify-center">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-tel.png" alt="Téléphone" class="w-4 h-auto">
+                        </div>
+                        <p class="text-sm leading-relaxed">02 47 66 63 70</p>
+                    </div>
+                    <!-- Horaires -->
+                    <div class="flex items-center gap-4">
+                        <div class="w-8 h-20 bg-ac-purple rounded-lg flex items-center justify-center">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-timer.png" alt="Horaires" class="w-auto h-4">
+                        </div>
+                        <p class="text-sm leading-relaxed">
+                            Du Lundi au Jeudi<br>
+                            8h00 – 12h30 | 13h30 – 17h00<br>
+                            Vendredi<br>8h00 à 12h00
+                        </p>
+                    </div>
+                </div>
+                <!-- Contactez-nous -->
+                <div class="text-center mt-6">
+                    <p class="text-black text-sm mb-2">Une question ? Un conseil…</p>
+                    <a href="#" class="bg-ac-blue text-white text-sm font-bold py-3 px-6 rounded-lg inline-flex items-center hover:bg-ac-darkblue transition">
+                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-mail.png" alt="Contactez-nous" class="w-5 h-5 mr-2">
+                        Contactez-nous
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Section images finales -->
+            <div class="bg-ac-darkblue py-4 px-4">
+                <div class="grid grid-cols-2 gap-2">
+                    <div class="rounded-xl overflow-hidden">
+                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer1.png" alt="Image 1" class="w-full h-36 object-cover">
+                    </div>
+                    <div class="rounded-xl overflow-hidden">
+                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer2.png" alt="Image 2" class="w-full h-36 object-cover">
+                    </div>
+                    <div class="rounded-xl overflow-hidden">
+                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer3.png" alt="Image 3" class="w-full h-36 object-cover">
+                    </div>
+                    <div class="rounded-xl overflow-hidden">
+                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer4.png" alt="Image 4" class="w-full h-36 object-cover">
+                    </div>
+                    <div class="rounded-xl overflow-hidden">
+                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer5.png" alt="Image 5" class="w-full h-36 object-cover">
+                    </div>
+                    <div class="rounded-xl overflow-hidden">
+                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer6.png" alt="Image 6" class="w-full h-36 object-cover">
+                    </div>
+                </div>
+                <!-- Mentions légales -->
+                <div class="text-center text-sm text-white mt-6 uppercase">
+                    <p>Mentions légales</p>
+                    <p>Politiques de confidentialités</p><br>
+                    <p>&copy; 2024 – Tous droits réservés</p>
+                </div>
+                <!-- Signature -->
+                <div class="text-center mt-4">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/SiGNATURE.png" alt="Logo Creatisweb" class="mx-auto h-12">
+                </div>
+            </div>
+        </footer>
+
+
 
     </main>
 
