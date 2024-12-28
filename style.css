@@ -484,6 +484,12 @@ video {
 .m-8 {
   margin: 2rem;
 }
+.m-4 {
+  margin: 1rem;
+}
+.m-6 {
+  margin: 1.5rem;
+}
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -495,6 +501,10 @@ video {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 .mb-2 {
   margin-bottom: 0.5rem;
@@ -517,9 +527,6 @@ video {
 .mt-12 {
   margin-top: 3rem;
 }
-.mt-16 {
-  margin-top: 4rem;
-}
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -532,8 +539,8 @@ video {
 .mt-8 {
   margin-top: 2rem;
 }
-.mt-1 {
-  margin-top: 0.25rem;
+.mt-16 {
+  margin-top: 4rem;
 }
 .inline-block {
   display: inline-block;
@@ -790,17 +797,31 @@ video {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .pl-4 {
   padding-left: 1rem;
 }
 .pt-2 {
   padding-top: 0.5rem;
 }
-.pt-16 {
-  padding-top: 4rem;
-}
 .pt-20 {
   padding-top: 5rem;
+}
+.pt-4 {
+  padding-top: 1rem;
+}
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+.pb-4 {
+  padding-bottom: 1rem;
 }
 .text-left {
   text-align: left;
@@ -810,6 +831,9 @@ video {
 }
 .font-bauhaus {
   font-family: "Bauhaus", sans-serif;
+}
+.font-plusJakarta {
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 .text-3xl {
   font-size: 1.875rem;
@@ -838,6 +862,9 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.text-\[40px\] {
+  font-size: 40px;
 }
 .font-bold {
   font-weight: 700;
@@ -886,6 +913,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
+.text-\[\#0F0C24\] {
+  --tw-text-opacity: 1;
+  color: rgb(15 12 36 / var(--tw-text-opacity, 1));
+}
 .opacity-80 {
   opacity: 0.8;
 }
@@ -903,13 +934,13 @@ video {
 }
 @font-face {
   font-family: "Bauhaus";
-  src: url("/assets/fonts/BauhausRegular.woff") format("woff");
+  src: url("/test-integrateur-wp/wp-content/themes/perso-creatisweb/assets/fonts/BauhausRegular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Plus Jakarta Sans";
-  src: url("/assets/fonts/PlusJakartaSans.woff") format("woff");
+  src: url("/test-integrateur-wp/wp-content/themes/perso-creatisweb/assets/fonts/PlusJakartaSans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }

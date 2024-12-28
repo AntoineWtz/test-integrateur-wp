@@ -34,25 +34,25 @@
                 <div class="relative rounded-xl overflow-hidden mt-4 ml-4 mr-4">
                     <img src="<?php echo $uploads['baseurl']; ?>/2024/12/peinture.png" alt="Peinture & Décoration" class="w-full h-56 object-cover opacity-80">
                     <div class="absolute bottom-4 left-4 right-0 p-2">
-                        <p class="text-white text-3xl font-bauhaus">Peinture & Décoration</p>
+                        <p class="text-white text-4xl font-bauhaus">Peinture & Décoration</p>
                     </div>
                 </div>
                 <div class="relative  rounded-xl overflow-hidden ml-4 mr-4">
                     <img src="<?php echo $uploads['baseurl']; ?>/2024/12/revetement.jpg" alt="Revêtements Sols & Murs" class="w-full h-56 object-cover opacity-80">
                     <div class="absolute bottom-4 left-4 right-0 p-2">
-                        <p class="text-white text-3xl font-bauhaus">Revêtements Sols & Murs</p>
+                        <p class="text-white text-4xl font-bauhaus">Revêtements Sols & Murs</p>
                     </div>
                 </div>
                 <div class="relative rounded-xl overflow-hidden ml-4 mr-4">
                     <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie.jpg" alt="La Vitrerie" class="w-full h-56 object-cover opacity-80">
                     <div class="absolute bottom-4 left-4 right-0 p-2">
-                        <p class="text-white text-3xl font-bauhaus">La Vitrerie</p>
+                        <p class="text-white text-4xl font-bauhaus">La Vitrerie</p>
                     </div>
                 </div>
                 <div class="relative rounded-xl overflow-hidden mb-4 ml-4 mr-4">
                     <img src="<?php echo $uploads['baseurl']; ?>/2024/12/renovation.jpg" alt="Rénovation & Remise en état" class="w-full h-56 object-cover opacity-80">
                     <div class="absolute bottom-4 left-4 right-0 p-2">
-                        <p class="text-white text-3xl font-bauhaus">Rénovation & Remise en état</p>
+                        <p class="text-white text-4xl font-bauhaus">Rénovation & Remise en état</p>
                     </div>
                 </div>
             </div>
@@ -60,27 +60,27 @@
 
         <!-- Maison d'Expérience -->
         <section class="text-center py-8 bg-white">
-            <h2 class="text-4xl font-bold text-gray-900 mb-6 font-bauhaus">Maison d'expérience</h2>
-            <p class="inline-block bg-ac-green font-thin text-white text-lg px-3 py-1 rounded-full">- depuis 1971 -</p>
-            <p class="mt-4 text-gray-700 text-base px-6 uppercase">
-                Notre force le conseil et un accompagnement privilégié sur mesure, adapté à vos envies et votre budget.
+            <h2 class="text-4xl font-bauhaus text-ac-darkblue mx-6 mb-6">Maison d'expérience</h2>
+            <p class="inline-block bg-ac-green font-bauhaus text-white text-xl px-4 py-1 rounded-full">- depuis 1971 -</p>
+            <p class="mt-4 text-ac-darkblue text-sm font-plusJakarta px-6 uppercase">
+                Notre force<br>le conseil et un accompagnement privilégié sur mesure, adapté à vos envies et votre budget.
             </p>
             <!-- Items -->
             <div class="grid grid-cols-2 gap-6 mt-8">
                 <div class="text-center">
-                    <p class="text-gray-900 text-xl font-bold">Interlocuteur unique</p>
+                    <p class="text-xl font-bauhaus text-ac-darkblue">Interlocuteur unique</p>
                     <div class="mt-2 mx-auto w-6 h-2 rounded-full bg-ac-purple"></div>
                 </div>
                 <div class="text-center">
-                    <p class="text-gray-900 text-xl font-bold">Showroom privatisé</p>
+                    <p class="text-xl font-bauhaus text-ac-darkblue">Showroom privatisé</p>
                     <div class="mt-2 mx-auto w-6 h-2 rounded-full bg-ac-yellow"></div>
                 </div>
                 <div class="text-center">
-                    <p class="text-gray-900 text-xl font-bold">Conseils<br />Avisés</p>
+                    <p class="text-xl font-bauhaus text-ac-darkblue">Conseils<br />Avisés</p>
                     <div class="mt-2 mx-auto w-6 h-2 rounded-full bg-ac-orange"></div>
                 </div>
                 <div class="text-center">
-                    <p class="text-gray-900 text-xl font-bold">Service de Vitrerie</p>
+                    <p class="text-xl font-bauhaus text-ac-darkblue">Service<br>de Vitrerie</p>
                     <div class="mt-2 mx-auto w-6 h-2 rounded-full bg-ac-green"></div>
                 </div>
             </div>
@@ -97,22 +97,22 @@
                 <img src="<?php echo $uploads['baseurl']; ?>/2024/12/conseils-couleurs.png" alt="Les Conseils Couleurs d'Émilie" class="w-full h-80 object-cover rounded-[34px]">
                 <!-- Conteneur avec fond blanc arrondi -->
                 <div class="absolute bottom-0 right-0 bg-white pt-2 pl-4 rounded-tl-3xl text-left w-2/3">
-                    <h3 class="text-3xl font-base text-gray-900">
+                    <h3 class="text-3xl font-base text-ac-darkblue font-bauhaus">
                         Les Conseils <br />Couleurs <br />
                         <span class="text-ac-purple">d'Émilie</span>
                     </h3>
                 </div>
             </div>
             <!-- Texte -->
-            <div class="pt-2">
+            <div class="pt-4 font-plusJakarta">
                 <p class="text-ac-purple text-md uppercase"> Vivre la couleur est au quotidien est essentiel !</p>
-                <p class="mt-4 text-gray-700 text-sm leading-6">
+                <p class="mt-4 text-black text-sm leading-6">
                     Avec passion, je vous accompagne et vous conseille dans vos projets de décoration d’intérieur, pour créer des ambiances harmonieuses en accord avec vos envies et votre budget.
                 </p>
             </div>
             <!-- Bouton -->
             <div class="text-center mt-6 mb-4">
-                <a href="#" class="bg-ac-purple font-bauhaus text-white text-sm font-bold py-2 px-20 rounded-lg hover:bg-ac-orange transition">
+                <a href="#" class="bg-ac-purple text-white font-bauhaus py-2 px-20 rounded-lg hover:bg-ac-orange transition">
                     découvrir
                 </a>
             </div>
@@ -134,10 +134,10 @@
                     </div>
                 </div>
                 <!-- Texte -->
-                <div class="mt-12">
-                    <h3 class="text-3xl text-center">La Vitrerie</h3>
-                    <p class="text-ac-blue text-md mt-4 uppercase">Remplacement & Rénovation de vitres</p>
-                    <p class="text-gray-700 text-sm mt-4 leading-6">
+                <div class="mt-16 font-plusJakarta">
+                    <h3 class="text-3xl text-center font-bauhaus text-ac-darkblue">La Vitrerie</h3>
+                    <p class="text-ac-blue text-md mt-4 uppercase">Remplacement<br>& Rénovation de vitres</p>
+                    <p class="text-black text-sm mt-4 leading-6">
                         Verres simples, verres de verrières, verres de marquises, verres imprimés, verres feuilletés,
                         verres de fenêtres de toit, doubles vitrages, miroirs...
                     </p>
@@ -145,7 +145,7 @@
 
                 <!-- Bouton -->
                 <div class="text-center mt-6">
-                    <a href="#" class="bg-ac-blue text-white text-sm font-bold py-2 px-20 rounded-lg hover:bg-ac-orange transition">
+                    <a href="#" class="bg-ac-blue text-white text-sm font-plusJakarta py-2 px-20 rounded-lg hover:bg-ac-orange transition">
                         en savoir +
                     </a>
                 </div>
@@ -155,8 +155,8 @@
         <!-- Réalisations -->
         <section class="py-8 px-4" style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/fond-couleur2.png'); background-size: cover; background-position: center;">
             <!-- Texte -->
-            <div class="text-white">
-                <h1 class="text-3xl text-center mb-4">Nos Réalisations</h1>
+            <div class="text-white font-plusJakarta">
+                <h1 class="text-4xl text-center mb-6 font-bauhaus">Nos Réalisations</h1>
                 <p class="text-ac-yellow text-md uppercase">
                     Nous vous accompagnons dans vos projets de peinture, rénovation & décoration !
                 </p>
@@ -193,7 +193,7 @@
         <!-- Footer -->
         <footer>
             <!-- Section coordonnées -->
-            <div class="text-ac-darkblue py-8 px-4">
+            <div class="text-ac-darkblue py-8 px-4 font-plusJakarta">
                 <div class="flex justify-center">
                     <img src="<?php echo $uploads['baseurl']; ?>/2024/12/logo-mobile.png" alt="Logo" class="h-20">
                 </div>
@@ -203,7 +203,7 @@
                         <div class="w-8 h-8 bg-ac-yellow rounded-lg flex items-center justify-center">
                             <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-localisation.png" alt="Adresse" class="w-auto h-4">
                         </div>
-                        <p class="text-sm leading-relaxed">
+                        <p class="text-sm leading-relaxed text-ac-darkblue">
                             16 Rue du Général Renault<br>
                             37000 Tours
                         </p>
@@ -213,14 +213,14 @@
                         <div class="w-8 h-8 bg-ac-green rounded-lg flex items-center justify-center">
                             <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-tel.png" alt="Téléphone" class="w-4 h-auto">
                         </div>
-                        <p class="text-sm leading-relaxed">02 47 66 63 70</p>
+                        <p class="text-sm leading-relaxed text-ac-darkblue">02 47 66 63 70</p>
                     </div>
                     <!-- Horaires -->
                     <div class="flex items-center gap-4">
                         <div class="w-8 h-20 bg-ac-purple rounded-lg flex items-center justify-center">
                             <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-timer.png" alt="Horaires" class="w-auto h-4">
                         </div>
-                        <p class="text-sm leading-relaxed">
+                        <p class="text-sm leading-relaxed text-ac-darkblue">
                             Du Lundi au Jeudi<br>
                             8h00 – 12h30 | 13h30 – 17h00<br>
                             Vendredi<br>8h00 à 12h00
@@ -229,8 +229,8 @@
                 </div>
                 <!-- Contactez-nous -->
                 <div class="text-center mt-6">
-                    <p class="text-black text-sm mb-2">Une question ? Un conseil…</p>
-                    <a href="#" class="bg-ac-blue text-white text-sm font-bold py-3 px-12 rounded inline-flex items-center hover:bg-ac-darkblue transition">
+                    <p class="text-sm mb-2 text-ac-darkblue">Une question ? Un conseil…</p>
+                    <a href="#" class="bg-ac-blue text-white text-base font-bauhaus py-2 px-12 rounded inline-flex items-center hover:bg-ac-darkblue transition">
                         <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-mail.png" alt="Contactez-nous" class="w-5 h-auto mr-2">
                         Contactez-nous
                     </a>
@@ -260,7 +260,7 @@
                     </div>
                 </div>
                 <!-- Mentions légales -->
-                <div class="text-center text-xs text-white mt-8 uppercase">
+                <div class="text-center text-xs font-plusJakarta text-white mt-8 uppercase">
                     <p>Mentions légales</p>
                     <p>Politiques de confidentialités</p><br>
                     <p>&copy; 2024 – Tous droits réservés</p>
@@ -276,7 +276,7 @@
 
     </main>
 
-    <?php wp_footer(); ?>
 </body>
+<?php wp_footer(); ?>
 
 </html>
