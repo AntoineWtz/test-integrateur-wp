@@ -1,3 +1,9 @@
 {
-    "/style.css": "/style.css"
+    "/style.css": "/style.css",
+    "/dist/fonts/BauhausBold.woff": "/dist/fonts/BauhausBold.woff",
+    "/dist/fonts/BauhausBoldItalic.woff": "/dist/fonts/BauhausBoldItalic.woff",
+    "/dist/fonts/BauhausItalic.woff": "/dist/fonts/BauhausItalic.woff",
+    "/dist/fonts/BauhausRegular.woff": "/dist/fonts/BauhausRegular.woff",
+    "/dist/fonts/PlusJakartaSans-Italic[wght].woff": "/dist/fonts/PlusJakartaSans-Italic[wght].woff",
+    "/dist/fonts/PlusJakartaSans.woff": "/dist/fonts/PlusJakartaSans.woff"
 }

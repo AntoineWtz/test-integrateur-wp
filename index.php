@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Intégrateur WP</title>
-    <!-- <?php wp_head(); ?> -->
+    <?php wp_head(); ?>
 </head>
 
 <body>
@@ -28,29 +28,29 @@
 
     <main>
         <section class="relative bg-contain bg-center pt-20"
-            style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/fond-couleur.png');">
+            style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/fond-couleur.png');" loading="lazy">
             <!-- Encarts -->
             <div class="grid grid-cols-1 gap-4">
                 <div class="relative rounded-xl overflow-hidden mt-4 ml-4 mr-4">
-                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/peinture.png" alt="Peinture & Décoration" class="w-full h-56 object-cover opacity-80">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/peinture.png" alt="Peinture & Décoration" class="w-full h-56 object-cover opacity-80" loading="lazy">
                     <div class="absolute bottom-4 left-4 right-0 p-2">
                         <p class="text-white text-4xl font-bauhaus">Peinture & Décoration</p>
                     </div>
                 </div>
                 <div class="relative  rounded-xl overflow-hidden ml-4 mr-4">
-                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/revetement.jpg" alt="Revêtements Sols & Murs" class="w-full h-56 object-cover opacity-80">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/revetement.jpg" alt="Revêtements Sols & Murs" class="w-full h-56 object-cover opacity-80" loading="lazy">
                     <div class="absolute bottom-4 left-4 right-0 p-2">
                         <p class="text-white text-4xl font-bauhaus">Revêtements Sols & Murs</p>
                     </div>
                 </div>
                 <div class="relative rounded-xl overflow-hidden ml-4 mr-4">
-                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie.jpg" alt="La Vitrerie" class="w-full h-56 object-cover opacity-80">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie.jpg" alt="La Vitrerie" class="w-full h-56 object-cover opacity-80" loading="lazy">
                     <div class="absolute bottom-4 left-4 right-0 p-2">
                         <p class="text-white text-4xl font-bauhaus">La Vitrerie</p>
                     </div>
                 </div>
                 <div class="relative rounded-xl overflow-hidden mb-4 ml-4 mr-4">
-                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/renovation.jpg" alt="Rénovation & Remise en état" class="w-full h-56 object-cover opacity-80">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/renovation.jpg" alt="Rénovation & Remise en état" class="w-full h-56 object-cover opacity-80" loading="lazy">
                     <div class="absolute bottom-4 left-4 right-0 p-2">
                         <p class="text-white text-4xl font-bauhaus">Rénovation & Remise en état</p>
                     </div>
@@ -86,7 +86,7 @@
             </div>
             <!-- Google Avis -->
             <div class="mt-12 text-center">
-                <img src="<?php echo $uploads['baseurl']; ?>/2024/12/google.png" alt="Logo Google" class="mx-auto">
+                <img src="<?php echo $uploads['baseurl']; ?>/2024/12/google.png" alt="Logo Google" class="mx-auto" loading="lazy">
             </div>
         </section>
 
@@ -94,7 +94,7 @@
         <section class="relative bg-white mx-4 my-8 overflow-hidden">
             <!-- Image avec titre superposé -->
             <div class="relative">
-                <img src="<?php echo $uploads['baseurl']; ?>/2024/12/conseils-couleurs.png" alt="Les Conseils Couleurs d'Émilie" class="w-full h-80 object-cover rounded-[34px]">
+                <img src="<?php echo $uploads['baseurl']; ?>/2024/12/conseils-couleurs.png" alt="Les Conseils Couleurs d'Émilie" class="w-full h-80 object-cover rounded-[34px]" loading="lazy">
                 <!-- Conteneur avec fond blanc arrondi -->
                 <div class="absolute bottom-0 right-0 bg-white pt-2 pl-4 rounded-tl-3xl text-left w-2/3">
                     <h3 class="text-3xl font-base text-ac-darkblue font-bauhaus">
@@ -112,7 +112,7 @@
             </div>
             <!-- Bouton -->
             <div class="text-center mt-6 mb-4">
-                <a href="#" class="bg-ac-purple text-white font-bauhaus py-2 px-20 rounded-lg hover:bg-ac-orange transition">
+                <a href="#" class="bg-ac-purple text-white font-bauhaus py-2 px-20 rounded-lg hover:bg-ac-orange transition" aria-label="Découvrir">
                     découvrir
                 </a>
             </div>
@@ -127,10 +127,10 @@
                 <!-- Images  -->
                 <div class="flex items-center justify-center gap-2">
                     <div class="w-40 h-60 rounded-xl rounded-bl-[250px] overflow-hidden translate-y-12">
-                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie.jpg" alt="Vitrerie 1" class="w-full h-full object-cover">
+                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie.jpg" alt="Vitrerie 1" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="w-40 h-60 rounded-xl rounded-tr-[250px] overflow-hidden">
-                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie2.png" alt="Vitrerie 2" class="w-full h-full object-cover">
+                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie2.png" alt="Vitrerie 2" class="w-full h-full object-cover" loading="lazy">
                     </div>
                 </div>
                 <!-- Texte -->
@@ -145,7 +145,7 @@
 
                 <!-- Bouton -->
                 <div class="text-center mt-6">
-                    <a href="#" class="bg-ac-blue text-white text-sm font-plusJakarta py-2 px-20 rounded-lg hover:bg-ac-orange transition">
+                    <a href="#" class="bg-ac-blue text-white text-sm font-plusJakarta py-2 px-20 rounded-lg hover:bg-ac-orange transition" aria-label="En savoir +">
                         en savoir +
                     </a>
                 </div>
@@ -168,13 +168,13 @@
             <!-- Images -->
             <div class="grid grid-cols-1 gap-6 mt-8">
                 <div class="relative rounded-xl overflow-hidden">
-                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations1.jpg" alt="Réalisation 1" class="w-full h-64 object-cover">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations1.jpg" alt="Réalisation 1" class="w-full h-64 object-cover" loading="lazy">
                 </div>
                 <div class="relative rounded-xl overflow-hidden">
-                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations2.jpg" alt="Réalisation 2" class="w-full h-64 object-cover">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations2.jpg" alt="Réalisation 2" class="w-full h-64 object-cover" loading="lazy">
                 </div>
                 <div class="relative rounded-xl overflow-hidden">
-                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations3.jpg" alt="Réalisation 3" class="w-full h-64 object-cover">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations3.jpg" alt="Réalisation 3" class="w-full h-64 object-cover" loading="lazy">
                 </div>
             </div>
 
@@ -183,8 +183,8 @@
                 <a href="#" class="flex-1 bg-ac-yellow text-ac-darkblue text-xs font-bold py-3 px-1 rounded-lg text-center hover:bg-white hover:text-ac-darkblue transition">
                     J'en veux +
                 </a>
-                <a href="#" class="flex-1 flex items-center justify-center bg-transparent border-[3px] border-ac-yellow text-ac-yellow text-xs font-bold py-2 px-1 rounded-lg hover:bg-white hover:text-ac-yellow transition">
-                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/instagram-logo.png" alt="Logo Instagram" class="w-5 h-5 mr-2">
+                <a href="#" class="flex-1 flex items-center justify-center bg-transparent border-[3px] border-ac-yellow text-ac-yellow text-xs font-bold py-2 px-1 rounded-lg hover:bg-white hover:text-ac-yellow transition" aria-label="Suivez-nous">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/instagram-logo.png" alt="Logo Instagram" class="w-5 h-5 mr-2" loading="lazy">
                     Suivez-nous !
                 </a>
             </div>
@@ -195,13 +195,13 @@
             <!-- Section coordonnées -->
             <div class="text-ac-darkblue py-8 px-4 font-plusJakarta">
                 <div class="flex justify-center">
-                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/logo-mobile.png" alt="Logo" class="h-20">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/logo-mobile.png" alt="Logo" class="h-20" loading="lazy">
                 </div>
                 <div class="m-8 space-y-6">
                     <!-- Adresse -->
                     <div class="flex items-center gap-4">
                         <div class="w-8 h-8 bg-ac-yellow rounded-lg flex items-center justify-center">
-                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-localisation.png" alt="Adresse" class="w-auto h-4">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-localisation.png" alt="Adresse" class="w-auto h-4" loading="lazy">
                         </div>
                         <p class="text-sm leading-relaxed text-ac-darkblue">
                             16 Rue du Général Renault<br>
@@ -211,14 +211,14 @@
                     <!-- Téléphone -->
                     <div class="flex items-center gap-4">
                         <div class="w-8 h-8 bg-ac-green rounded-lg flex items-center justify-center">
-                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-tel.png" alt="Téléphone" class="w-4 h-auto">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-tel.png" alt="Téléphone" class="w-4 h-auto" loading="lazy">
                         </div>
                         <p class="text-sm leading-relaxed text-ac-darkblue">02 47 66 63 70</p>
                     </div>
                     <!-- Horaires -->
                     <div class="flex items-center gap-4">
                         <div class="w-8 h-20 bg-ac-purple rounded-lg flex items-center justify-center">
-                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-timer.png" alt="Horaires" class="w-auto h-4">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-timer.png" alt="Horaires" class="w-auto h-4" loading="lazy">
                         </div>
                         <p class="text-sm leading-relaxed text-ac-darkblue">
                             Du Lundi au Jeudi<br>
@@ -230,8 +230,8 @@
                 <!-- Contactez-nous -->
                 <div class="text-center mt-6">
                     <p class="text-sm mb-2 text-ac-darkblue">Une question ? Un conseil…</p>
-                    <a href="#" class="bg-ac-blue text-white text-base font-bauhaus py-2 px-12 rounded inline-flex items-center hover:bg-ac-darkblue transition">
-                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-mail.png" alt="Contactez-nous" class="w-5 h-auto mr-2">
+                    <a href="#" class="bg-ac-blue text-white text-base font-bauhaus py-2 px-12 rounded inline-flex items-center hover:bg-ac-darkblue transition" aria-label="Contactez-nous">
+                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-mail.png" alt="Contactez-nous" class="w-5 h-auto mr-2" loading="lazy">
                         Contactez-nous
                     </a>
                 </div>
@@ -241,22 +241,22 @@
             <div class="bg-ac-darkblue py-4 px-4">
                 <div class="grid grid-cols-2 gap-2">
                     <div class="rounded-xl overflow-hidden">
-                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer1.png" alt="Image 1" class="w-full h-36 object-cover">
+                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer1.png" alt="Image 1" class="w-full h-36 object-cover" loading="lazy">
                     </div>
                     <div class="rounded-xl overflow-hidden">
-                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer2.png" alt="Image 2" class="w-full h-36 object-cover">
+                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer2.png" alt="Image 2" class="w-full h-36 object-cover" loading="lazy">
                     </div>
                     <div class="rounded-xl overflow-hidden">
-                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer3.png" alt="Image 3" class="w-full h-36 object-cover">
+                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer3.png" alt="Image 3" class="w-full h-36 object-cover" loading="lazy">
                     </div>
                     <div class="rounded-xl overflow-hidden">
-                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer4.png" alt="Image 4" class="w-full h-36 object-cover">
+                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer4.png" alt="Image 4" class="w-full h-36 object-cover" loading="lazy">
                     </div>
                     <div class="rounded-xl overflow-hidden">
-                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer5.png" alt="Image 5" class="w-full h-36 object-cover">
+                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer5.png" alt="Image 5" class="w-full h-36 object-cover" loading="lazy">
                     </div>
                     <div class="rounded-xl overflow-hidden">
-                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer6.png" alt="Image 6" class="w-full h-36 object-cover">
+                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer6.png" alt="Image 6" class="w-full h-36 object-cover" loading="lazy">
                     </div>
                 </div>
                 <!-- Mentions légales -->
@@ -267,7 +267,7 @@
                 </div>
                 <!-- Signature -->
                 <div class="text-center mt-4">
-                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/SiGNATURE.png" alt="Logo Creatisweb" class="mx-auto h-12">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/SiGNATURE.png" alt="Logo Creatisweb" class="mx-auto h-12" loading="lazy">
                 </div>
             </div>
         </footer>
