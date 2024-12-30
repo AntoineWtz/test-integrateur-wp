@@ -57,7 +57,7 @@
                 </div>
             </div>
             <!-- Bouton contact -->
-            <div class="mt-20">
+            <div class="pt-20">
                 <a href="#contact" class="flex items-center space-x-4 bg-transparent text-ac-purple border-4 border-ac-purple py-2 px-6 rounded-lg shadow hover:bg-ac-lightblue transition">
                     <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-contact.png" alt="Contact" class="h-6 w-6">
                     <span class="font-bauhaus text-white">Parlez-nous<br>de votre projet ?</span>
@@ -253,7 +253,7 @@
                 <div class="flex justify-center">
                     <img src="<?php echo $uploads['baseurl']; ?>/2024/12/logo-mobile.png" alt="Logo" class="h-20" loading="lazy">
                 </div>
-                <div class="m-8 space-y-6">
+                <div class="mt-16 m-8 space-y-6">
                     <!-- Adresse -->
                     <div class="flex items-center gap-4">
                         <div class="w-8 h-8 bg-ac-yellow rounded-lg flex items-center justify-center">
