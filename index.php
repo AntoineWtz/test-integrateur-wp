@@ -116,9 +116,9 @@
 
         <!-- Maison d'Expérience -->
         <section class="text-center py-8 bg-white">
-            <h2 class="text-4xl font-bauhaus text-ac-darkblue mx-6 mb-6">Maison d'expérience</h2>
+            <h2 class="text-4xl font-bauhaus text-ac-darkblue mx-6 mb-2">Maison d'expérience</h2>
             <p class="inline-block bg-ac-green font-bauhaus text-white text-xl px-4 py-1 rounded-full">- depuis 1971 -</p>
-            <p class="mt-4 text-ac-darkblue text-sm font-plusJakarta px-6 uppercase">
+            <p class="mt-8 text-ac-darkblue text-sm font-plusJakarta px-6 uppercase">
                 Notre force<br>le conseil et un accompagnement privilégié sur mesure, adapté à vos envies et votre budget.
             </p>
             <!-- Items -->
@@ -152,7 +152,7 @@
             <div class="relative">
                 <img src="<?php echo $uploads['baseurl']; ?>/2024/12/conseils-couleurs.png" alt="Les Conseils Couleurs d'Émilie" class="w-full h-80 object-cover rounded-[34px]" loading="lazy">
                 <!-- Conteneur avec fond blanc arrondi -->
-                <div class="absolute bottom-0 right-0 bg-white pt-2 pl-4 rounded-tl-3xl text-left w-2/3">
+                <div class="absolute bottom-0 right-0 bg-white pt-2 pl-6 rounded-tl-3xl text-left w-2/3">
                     <h3 class="text-3xl font-base text-ac-darkblue font-bauhaus">
                         Les Conseils <br />Couleurs <br />
                         <span class="text-ac-purple">d'Émilie</span>
@@ -167,7 +167,7 @@
                 </p>
             </div>
             <!-- Bouton -->
-            <div class="text-center mt-6 mb-4">
+            <div class="text-center mt-8 mb-4">
                 <a href="#" class="bg-ac-purple text-white font-bauhaus py-2 px-20 rounded-lg hover:bg-ac-orange transition" aria-label="Découvrir">
                     découvrir
                 </a>
@@ -200,7 +200,7 @@
                 </div>
 
                 <!-- Bouton -->
-                <div class="text-center mt-6">
+                <div class="text-center mt-8">
                     <a href="#" class="bg-ac-blue text-white text-sm font-plusJakarta py-2 px-20 rounded-lg hover:bg-ac-orange transition" aria-label="En savoir +">
                         en savoir +
                     </a>
@@ -213,10 +213,10 @@
             <!-- Texte -->
             <div class="text-white font-plusJakarta">
                 <h1 class="text-4xl text-center mb-6 font-bauhaus">Nos Réalisations</h1>
-                <p class="text-ac-yellow text-md uppercase">
+                <p class="text-ac-yellow text-sm uppercase">
                     Nous vous accompagnons dans vos projets de peinture, rénovation & décoration !
                 </p>
-                <p class="text-md mt-4 leading-6">
+                <p class="text-sm mt-4 leading-6">
                     Plus d’hésitations : découvrez en images un petit aperçu de nos réalisations pour vous inspirer et mieux vous projeter dans vos futurs projets !
                 </p>
             </div>

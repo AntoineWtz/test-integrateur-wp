@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Le script.js est chargé !');
     const burgerMenu = document.getElementById('burger-menu');
     const menuBurgerButton = document.getElementById('menu-burger');
     const closeMenuButton = document.getElementById('close-menu');
