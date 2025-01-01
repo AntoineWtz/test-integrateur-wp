@@ -115,36 +115,44 @@
         </section>
 
         <!-- Maison d'Expérience -->
-        <section class="text-center py-8 bg-white">
-            <h2 class="text-4xl font-bauhaus text-ac-darkblue mx-6 mb-2">Maison d'expérience</h2>
-            <p class="inline-block bg-ac-green font-bauhaus text-white text-xl px-4 py-1 rounded-full">- depuis 1971 -</p>
-            <p class="mt-8 text-ac-darkblue text-sm font-plusJakarta px-6 uppercase">
-                Notre force<br>le conseil et un accompagnement privilégié sur mesure, adapté à vos envies et votre budget.
-            </p>
-            <!-- Items -->
-            <div class="grid grid-cols-2 gap-6 mt-8">
-                <div class="text-center">
-                    <p class="text-xl font-bauhaus text-ac-darkblue">Interlocuteur unique</p>
-                    <div class="mt-2 mx-auto w-6 h-2 rounded-full bg-ac-purple"></div>
+        <section class="text-center py-12 bg-white">
+            <h2 class="text-4xl font-bauhaus text-ac-darkblue mb-6 mx-8">Maison d'expérience</h2>
+            <p class="inline-block bg-ac-green text-white text-lg font-bauhaus px-4 py-1 rounded-full">- depuis 1971 -</p>
+            <div class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Texte -->
+                <div>
+                    <p class="text-gray-700 text-base font-plusJakarta leading-relaxed uppercase md:ml-32 px-1 md:px-12">
+                        Notre force<br>le conseil et un accompagnement privilégié sur mesure, adapté à vos envies et votre budget.
+                    </p>
                 </div>
-                <div class="text-center">
-                    <p class="text-xl font-bauhaus text-ac-darkblue">Showroom privatisé</p>
-                    <div class="mt-2 mx-auto w-6 h-2 rounded-full bg-ac-yellow"></div>
-                </div>
-                <div class="text-center">
-                    <p class="text-xl font-bauhaus text-ac-darkblue">Conseils<br />Avisés</p>
-                    <div class="mt-2 mx-auto w-6 h-2 rounded-full bg-ac-orange"></div>
-                </div>
-                <div class="text-center">
-                    <p class="text-xl font-bauhaus text-ac-darkblue">Service<br>de Vitrerie</p>
-                    <div class="mt-2 mx-auto w-6 h-2 rounded-full bg-ac-green"></div>
+                <!-- Avis Google -->
+                <div class="hidden lg:flex justify-center md:mr-32">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/google.png" alt="Logo Google" class="h-20 w-auto">
                 </div>
             </div>
-            <!-- Google Avis -->
-            <div class="mt-12 text-center">
+            <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <p class="text-xl font-bauhaus text-ac-darkblue">Interlocuteur<br>unique</p>
+                    <div class="mt-2 lg:mt-4 mx-auto w-6 h-2 lg:w-20 rounded-full bg-ac-purple"></div>
+                </div>
+                <div class="text-center">
+                    <p class="text-xl font-bauhaus text-ac-darkblue">Showroom<br>privatisé</p>
+                    <div class="mt-2 lg:mt-4 mx-auto w-6 h-2 lg:w-20 rounded-full bg-ac-yellow"></div>
+                </div>
+                <div class="text-center">
+                    <p class="text-xl font-bauhaus text-ac-darkblue">Conseils<br>avisés</p>
+                    <div class="mt-2 lg:mt-4 mx-auto w-6 h-2 lg:w-20 rounded-full bg-ac-orange"></div>
+                </div>
+                <div class="text-center">
+                    <p class="text-xl font-bauhaus text-ac-darkblue">Service<br>de vitrerie</p>
+                    <div class="mt-2 lg:mt-4 mx-auto w-6 h-2 lg:w-20 rounded-full bg-ac-green"></div>
+                </div>
+            </div>
+            <div class="mt-12 text-center lg:hidden">
                 <img src="<?php echo $uploads['baseurl']; ?>/2024/12/google.png" alt="Logo Google" class="mx-auto" loading="lazy">
             </div>
         </section>
+
 
         <!-- Conseils Couleurs Emilie -->
         <section class="relative bg-white mx-4 my-8 overflow-hidden">
