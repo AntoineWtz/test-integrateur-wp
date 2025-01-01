@@ -66,7 +66,7 @@
             <!-- Réseaux sociaux -->
             <div class="flex items-center space-x-4 mt-8">
                 <p class="text-white font-plusJakarta">Suivez-nous</p>
-                <!-- Flèche en SVG -->
+                <!-- Flèche SVG -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-ac-yellow mx-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
@@ -132,20 +132,20 @@
             </div>
             <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-2">
                 <div class="text-center">
-                    <p class="text-xl font-bauhaus text-ac-darkblue">Interlocuteur<br>unique</p>
-                    <div class="mt-2 lg:mt-4 mx-auto w-6 h-2 lg:w-20 rounded-full bg-ac-purple"></div>
+                    <p class="text-xl font-bauhaus text-ac-darkblue mt-4">Interlocuteur<br>unique</p>
+                    <div class="mt-4 mx-auto w-6 h-2 lg:w-20 rounded-full bg-ac-purple"></div>
                 </div>
                 <div class="text-center">
-                    <p class="text-xl font-bauhaus text-ac-darkblue">Showroom<br>privatisé</p>
-                    <div class="mt-2 lg:mt-4 mx-auto w-6 h-2 lg:w-20 rounded-full bg-ac-yellow"></div>
+                    <p class="text-xl font-bauhaus text-ac-darkblue mt-4">Showroom<br>privatisé</p>
+                    <div class="mt-4 mx-auto w-6 h-2 lg:w-20 rounded-full bg-ac-yellow"></div>
                 </div>
                 <div class="text-center">
-                    <p class="text-xl font-bauhaus text-ac-darkblue">Conseils<br>avisés</p>
-                    <div class="mt-2 lg:mt-4 mx-auto w-6 h-2 lg:w-20 rounded-full bg-ac-orange"></div>
+                    <p class="text-xl font-bauhaus text-ac-darkblue mt-4">Conseils<br>Avisés</p>
+                    <div class="mt-4 mx-auto w-6 h-2 lg:w-20 rounded-full bg-ac-orange"></div>
                 </div>
                 <div class="text-center">
-                    <p class="text-xl font-bauhaus text-ac-darkblue">Service<br>de vitrerie</p>
-                    <div class="mt-2 lg:mt-4 mx-auto w-6 h-2 lg:w-20 rounded-full bg-ac-green"></div>
+                    <p class="text-xl font-bauhaus text-ac-darkblue mt-4">Service<br>de Vitrerie</p>
+                    <div class="mt-4 mx-auto w-6 h-2 lg:w-20 rounded-full bg-ac-green"></div>
                 </div>
             </div>
             <!-- Avis Google Mobile -->
@@ -157,13 +157,13 @@
         <!-- Conseils Couleurs Emilie -->
         <section class="relative bg-white mx-4 my-8 lg:mx-32 lg:my-16 overflow-hidden">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
-                <!-- Image principale avec fleches -->
+                <!-- Image principale -->
                 <div class="relative lg:col-span-2">
                     <img src="<?php echo $uploads['baseurl']; ?>/2024/12/conseils-couleurs.png"
                         alt="Les Conseils Couleurs d'Émilie"
                         class="w-full h-80 lg:h-full object-cover rounded-[34px]"
                         loading="lazy">
-                    <!-- Flèches pour le carrousel (uniquement desktop) -->
+                    <!-- Flèches pour le carrousel -->
                     <div class="absolute bottom-4 left-4 flex space-x-4 lg:block hidden">
                         <button aria-label="Image précédente" class="bg-white text-ac-purple rounded-full p-2 shadow hover:bg-ac-lightblue transition">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -186,7 +186,6 @@
                 </div>
                 <!-- Texte et titre sur fond blanc pour desktop -->
                 <div class="relative bg-white lg:rounded-tl-[34px] lg:p-8 lg:-ml-40 lg:-mb-48">
-                    <!-- Bloc image et titre -->
                     <div class="hidden lg:flex items-center mb-6">
                         <img src="<?php echo $uploads['baseurl']; ?>/2024/12/photo-emilie.png"
                             alt="Photo d'Émilie"
@@ -197,7 +196,6 @@
                             <span class="text-ac-purple">d'Émilie</span>
                         </h3>
                     </div>
-                    <!-- Texte descriptif -->
                     <p class="text-md text-ac-purple uppercase font-plusJakarta mb-2 lg:pl-8">Vivre la couleur au quotidien est essentiel !</p>
                     <p class="text-sm text-black leading-2 font-plusJakarta mb-6 lg:mr-52 lg:pl-8">
                         Avec passion, je vous accompagne et vous conseille dans vos projets de décoration d’intérieur, pour créer des ambiances harmonieuses en accord avec vos envies et votre budget.
@@ -216,18 +214,16 @@
 
         <!-- Vitrerie -->
         <section class="relative">
-            <!-- Rectangle bleu clair derrière les images -->
+            <!-- Rectangle bleu -->
             <div class="absolute inset-x-0 top-36 mx-auto w-full h-32 bg-ac-lightblue -z-10 lg:top-0 lg:right-0 lg:left-auto lg:w-[420px] lg:h-[150px] lg:translate-y-0 lg:rounded-tl-full lg:rounded-bl-full"></div>
 
             <div class="relative z-10 py-8 mx-4 my-8 lg:py-16 lg:mx-32">
                 <!-- Mobile layout -->
                 <div class="block lg:hidden">
                     <div class="flex items-center justify-center gap-2">
-                        <!-- Image 1 -->
                         <div class="w-40 h-60 rounded-xl rounded-bl-[250px] overflow-hidden translate-y-12">
                             <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie.jpg" alt="Vitrerie 1" class="w-full h-full object-cover" loading="lazy">
                         </div>
-                        <!-- Image 2 -->
                         <div class="w-40 h-60 rounded-xl rounded-tr-[250px] overflow-hidden">
                             <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie2.png" alt="Vitrerie 2" class="w-full h-full object-cover" loading="lazy">
                         </div>
@@ -265,11 +261,9 @@
                     </div>
                     <!-- Images -->
                     <div class="lg:col-span-2 flex flex-col lg:flex-row items-start gap-6 lg:gap-4 justify-end">
-                        <!-- Image 1 -->
                         <div class="w-64 h-96 rounded-xl rounded-bl-[250px] overflow-hidden translate-y-12 lg:translate-y-32">
                             <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie.jpg" alt="Vitrerie 1" class="w-full h-full object-cover" loading="lazy">
                         </div>
-                        <!-- Image 2 -->
                         <div class="w-64 h-96 rounded-xl rounded-tr-[250px] overflow-hidden -translate-y-6 lg:-translate-y-4">
                             <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie2.png" alt="Vitrerie 2" class="w-full h-full object-cover" loading="lazy">
                         </div>
@@ -277,8 +271,6 @@
                 </div>
             </div>
         </section>
-
-
 
         <!-- Réalisations -->
         <section class="py-8 px-4" style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/fond-couleur2.png'); background-size: cover; background-position: center;">
@@ -322,80 +314,96 @@
         <footer>
             <!-- Section coordonnées -->
             <div class="text-ac-darkblue py-8 px-4 font-plusJakarta">
+                <!-- Logo -->
                 <div class="flex justify-center">
                     <img src="<?php echo $uploads['baseurl']; ?>/2024/12/logo-mobile.png" alt="Logo" class="h-20" loading="lazy">
                 </div>
-                <div class="mt-16 m-8 space-y-6">
-                    <!-- Adresse -->
-                    <div class="flex items-center gap-4">
-                        <div class="w-8 h-8 bg-ac-yellow rounded-lg flex items-center justify-center">
-                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-localisation.png" alt="Adresse" class="w-auto h-4" loading="lazy">
+                <!-- Coordonnées -->
+                <div class="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start lg:items-center lg:justify-center lg:max-w-6xl lg:mx-auto">
+                    <!-- Colonne 1 -->
+                    <div class="text-left">
+                        <div class="ml-8 lg:ml-0 flex items-center gap-4 justify-start lg:justify-end">
+                            <div class="w-8 h-8 bg-ac-yellow rounded-lg flex items-center justify-center">
+                                <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-localisation.png" alt="Adresse" class="w-auto h-4" loading="lazy">
+                            </div>
+                            <p class="text-sm leading-relaxed text-ac-darkblue">
+                                16 Rue du Général Renault<br>
+                                37000 Tours
+                            </p>
                         </div>
-                        <p class="text-sm leading-relaxed text-ac-darkblue">
-                            16 Rue du Général Renault<br>
-                            37000 Tours
-                        </p>
-                    </div>
-                    <!-- Téléphone -->
-                    <div class="flex items-center gap-4">
-                        <div class="w-8 h-8 bg-ac-green rounded-lg flex items-center justify-center">
-                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-tel.png" alt="Téléphone" class="w-4 h-auto" loading="lazy">
+                        <div class="ml-8 lg:ml-0 flex items-center gap-4 mt-4 justify-start lg:justify-end">
+                            <div class="w-8 h-8 bg-ac-green rounded-lg flex items-center justify-center">
+                                <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-tel.png" alt="Téléphone" class="w-4 h-auto" loading="lazy">
+                            </div>
+                            <p class="text-sm leading-relaxed text-ac-darkblue">02 47 66 63 70</p>
                         </div>
-                        <p class="text-sm leading-relaxed text-ac-darkblue">02 47 66 63 70</p>
                     </div>
-                    <!-- Horaires -->
-                    <div class="flex items-center gap-4">
-                        <div class="w-8 h-20 bg-ac-purple rounded-lg flex items-center justify-center">
-                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-timer.png" alt="Horaires" class="w-auto h-4" loading="lazy">
+                    <!-- Colonne 2 -->
+                    <div class="text-left lg:text-center">
+                        <div class="ml-8 lg:ml-0 flex items-center gap-4 justify-start lg:justify-center">
+                            <div class="w-8 h-20 bg-ac-purple rounded-lg flex items-center justify-center">
+                                <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-timer.png" alt="Horaires" class="w-auto h-4" loading="lazy">
+                            </div>
+                            <p class="text-left text-sm leading-relaxed text-ac-darkblue">
+                                Du Lundi au Jeudi<br>
+                                8h00 – 12h30 | 13h30 – 17h00<br>
+                                Vendredi<br>8h00 à 12h00
+                            </p>
                         </div>
-                        <p class="text-sm leading-relaxed text-ac-darkblue">
-                            Du Lundi au Jeudi<br>
-                            8h00 – 12h30 | 13h30 – 17h00<br>
-                            Vendredi<br>8h00 à 12h00
-                        </p>
                     </div>
-                </div>
-                <!-- Contactez-nous -->
-                <div class="text-center mt-6">
-                    <p class="text-sm mb-2 text-ac-darkblue">Une question ? Un conseil…</p>
-                    <a href="#" class="bg-ac-blue text-white text-base font-bauhaus py-2 px-12 rounded inline-flex items-center hover:bg-ac-darkblue transition" aria-label="Contactez-nous">
-                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-mail.png" alt="Contactez-nous" class="w-5 h-auto mr-2" loading="lazy">
-                        Contactez-nous
-                    </a>
+                    <!-- Colonne 3 -->
+                    <div class="text-center lg:text-left lg:pl-8">
+                        <p class="text-sm mb-2 text-ac-darkblue text-center lg:text-left">Une question ? Un conseil…</p>
+                        <a href="#" class="bg-ac-blue text-white text-base font-bauhaus py-2 px-12 rounded inline-flex items-center hover:bg-ac-darkblue transition justify-center lg:justify-start" aria-label="Contactez-nous">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-mail.png" alt="Contactez-nous" class="w-5 h-auto mr-2" loading="lazy">
+                            Contactez-nous
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <!-- Section images finales -->
+
+            <!-- Section images -->
             <div class="bg-ac-darkblue py-4 px-4">
-                <div class="grid grid-cols-2 gap-2">
-                    <div class="rounded-xl overflow-hidden">
+                <!-- Images -->
+                <div class="grid grid-cols-2 lg:grid-cols-9 gap-2">
+                    <div class="rounded-xl overflow-hidden lg:col-span-1">
                         <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer1.png" alt="Image 1" class="w-full h-36 object-cover" loading="lazy">
                     </div>
-                    <div class="rounded-xl overflow-hidden">
+                    <div class="rounded-xl overflow-hidden lg:col-span-1">
                         <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer2.png" alt="Image 2" class="w-full h-36 object-cover" loading="lazy">
                     </div>
-                    <div class="rounded-xl overflow-hidden">
+                    <div class="rounded-xl overflow-hidden lg:col-span-1">
                         <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer3.png" alt="Image 3" class="w-full h-36 object-cover" loading="lazy">
                     </div>
-                    <div class="rounded-xl overflow-hidden">
+                    <div class="rounded-xl overflow-hidden lg:col-span-1">
                         <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer4.png" alt="Image 4" class="w-full h-36 object-cover" loading="lazy">
                     </div>
-                    <div class="rounded-xl overflow-hidden">
+                    <div class="rounded-xl overflow-hidden lg:col-span-1">
                         <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer5.png" alt="Image 5" class="w-full h-36 object-cover" loading="lazy">
                     </div>
-                    <div class="rounded-xl overflow-hidden">
+                    <div class="rounded-xl overflow-hidden lg:col-span-1">
                         <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer6.png" alt="Image 6" class="w-full h-36 object-cover" loading="lazy">
                     </div>
+                    <div class="rounded-xl overflow-hidden hidden lg:block lg:col-span-1">
+                        <img src="<?php echo $uploads['baseurl']; ?>/2025/01/footer7.jpg" alt="Image 7" class="w-full h-36 object-cover" loading="lazy">
+                    </div>
+                    <div class="rounded-xl overflow-hidden hidden lg:block lg:col-span-1">
+                        <img src="<?php echo $uploads['baseurl']; ?>/2025/01/footer8.jpg" alt="Image 8" class="w-full h-36 object-cover" loading="lazy">
+                    </div>
+                    <div class="rounded-xl overflow-hidden hidden lg:block lg:col-span-1">
+                        <img src="<?php echo $uploads['baseurl']; ?>/2025/01/footer9.jpg" alt="Image 9" class="w-full h-36 object-cover" loading="lazy">
+                    </div>
                 </div>
-                <!-- Mentions légales -->
-                <div class="text-center text-xs font-plusJakarta text-white mt-8 uppercase">
-                    <p>Mentions légales</p>
-                    <p>Politiques de confidentialités</p><br>
+
+                <!-- Mentions légales et signature -->
+                <div class="text-center text-xs font-plusJakarta text-white mt-8 uppercase lg:flex lg:items-center lg:justify-between">
                     <p>&copy; 2024 – Tous droits réservés</p>
-                </div>
-                <!-- Signature -->
-                <div class="text-center mt-4">
-                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/SiGNATURE.png" alt="Logo Creatisweb" class="mx-auto h-12" loading="lazy">
+                    <div>
+                        <p>Mentions légales</p>
+                        <p>Politiques de confidentialités</p>
+                    </div>
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/SiGNATURE.png" alt="Logo Creatisweb" class="mx-auto h-12 lg:mx-0" loading="lazy">
                 </div>
             </div>
         </footer>
