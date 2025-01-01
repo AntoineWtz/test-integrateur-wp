@@ -190,7 +190,7 @@
                     <div class="hidden lg:flex items-center mb-6">
                         <img src="<?php echo $uploads['baseurl']; ?>/2024/12/photo-emilie.png"
                             alt="Photo d'Émilie"
-                            class="h-16 w-16 rounded-full object-cover shadow-lg mr-4 lg:h-20 lg:w-20"
+                            class="h-16 w-16 rounded-tl-lg object-cover mr-4 lg:h-20 lg:w-20"
                             loading="lazy">
                         <h3 class="text-3xl font-bauhaus text-ac-darkblue">
                             Les Conseils Couleurs <br>
@@ -198,12 +198,12 @@
                         </h3>
                     </div>
                     <!-- Texte descriptif -->
-                    <p class="text-md text-ac-purple uppercase font-plusJakarta mb-2">Vivre la couleur au quotidien est essentiel !</p>
-                    <p class="text-sm text-black leading-6 font-plusJakarta mb-6">
+                    <p class="text-md text-ac-purple uppercase font-plusJakarta mb-2 lg:pl-8">Vivre la couleur au quotidien est essentiel !</p>
+                    <p class="text-sm text-black leading-2 font-plusJakarta mb-6 lg:mr-52 lg:pl-8">
                         Avec passion, je vous accompagne et vous conseille dans vos projets de décoration d’intérieur, pour créer des ambiances harmonieuses en accord avec vos envies et votre budget.
                     </p>
                     <!-- Bouton -->
-                    <div class="text-center lg:text-left">
+                    <div class="text-center lg:text-left lg:pl-8">
                         <a href="#"
                             class="bg-ac-purple text-white font-bauhaus py-2 px-20 lg:px-8 lg:py-2 rounded-lg hover:bg-ac-orange transition inline-block lg:w-auto"
                             aria-label="Découvrir">
