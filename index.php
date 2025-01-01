@@ -217,36 +217,68 @@
         <!-- Vitrerie -->
         <section class="relative">
             <!-- Rectangle bleu clair derrière les images -->
-            <div class="absolute inset-x-0 top-36 mx-auto w-full h-32 bg-ac-lightblue -z-10"></div>
+            <div class="absolute inset-x-0 top-36 mx-auto w-full h-32 bg-ac-lightblue -z-10 lg:top-0 lg:right-0 lg:left-auto lg:w-[420px] lg:h-[150px] lg:translate-y-0 lg:rounded-tl-full lg:rounded-bl-full"></div>
 
-            <div class="relative z-10 py-8 mx-4 my-8">
-                <!-- Images  -->
-                <div class="flex items-center justify-center gap-2">
-                    <div class="w-40 h-60 rounded-xl rounded-bl-[250px] overflow-hidden translate-y-12">
-                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie.jpg" alt="Vitrerie 1" class="w-full h-full object-cover" loading="lazy">
+            <div class="relative z-10 py-8 mx-4 my-8 lg:py-16 lg:mx-32">
+                <!-- Mobile layout -->
+                <div class="block lg:hidden">
+                    <div class="flex items-center justify-center gap-2">
+                        <!-- Image 1 -->
+                        <div class="w-40 h-60 rounded-xl rounded-bl-[250px] overflow-hidden translate-y-12">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie.jpg" alt="Vitrerie 1" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                        <!-- Image 2 -->
+                        <div class="w-40 h-60 rounded-xl rounded-tr-[250px] overflow-hidden">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie2.png" alt="Vitrerie 2" class="w-full h-full object-cover" loading="lazy">
+                        </div>
                     </div>
-                    <div class="w-40 h-60 rounded-xl rounded-tr-[250px] overflow-hidden">
-                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie2.png" alt="Vitrerie 2" class="w-full h-full object-cover" loading="lazy">
+                    <div class="mt-16 font-plusJakarta">
+                        <h3 class="text-3xl text-center font-bauhaus text-ac-darkblue">La Vitrerie</h3>
+                        <p class="text-ac-blue text-md mt-4 uppercase text-left">Remplacement<br>& Rénovation de vitres</p>
+                        <p class="text-black text-sm mt-4 leading-6 text-left">
+                            Verres simples, verres de verrières, verres de marquises, verres imprimés, verres feuilletés,
+                            verres de fenêtres de toit, doubles vitrages, miroirs...
+                        </p>
+                        <div class="text-center mt-8">
+                            <a href="#" class="bg-ac-blue text-white text-sm font-plusJakarta py-2 px-20 rounded-lg hover:bg-ac-orange transition" aria-label="En savoir +">
+                                en savoir +
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <!-- Texte -->
-                <div class="mt-16 font-plusJakarta">
-                    <h3 class="text-3xl text-center font-bauhaus text-ac-darkblue">La Vitrerie</h3>
-                    <p class="text-ac-blue text-md mt-4 uppercase">Remplacement<br>& Rénovation de vitres</p>
-                    <p class="text-black text-sm mt-4 leading-6">
-                        Verres simples, verres de verrières, verres de marquises, verres imprimés, verres feuilletés,
-                        verres de fenêtres de toit, doubles vitrages, miroirs...
-                    </p>
-                </div>
 
-                <!-- Bouton -->
-                <div class="text-center mt-8">
-                    <a href="#" class="bg-ac-blue text-white text-sm font-plusJakarta py-2 px-20 rounded-lg hover:bg-ac-orange transition" aria-label="En savoir +">
-                        en savoir +
-                    </a>
+                <!-- Desktop layout -->
+                <div class="hidden lg:grid lg:grid-cols-3 lg:gap-8 lg:items-center">
+                    <!-- Texte -->
+                    <div class="text-left lg:col-span-1 lg:translate-x-32">
+                        <h3 class="text-3xl font-bauhaus text-ac-darkblue">La Vitrerie</h3>
+                        <p class="text-ac-blue text-md mt-4 uppercase pl-12">Remplacement<br>& Rénovation de vitres</p>
+                        <p class="text-black text-sm mt-4 leading-6 pl-12">
+                            Verres simples, verres de verrières, verres de marquises, verres imprimés, verres feuilletés,
+                            verres de fenêtres de toit, doubles vitrages, miroirs...
+                        </p>
+                        <div class="text-left mt-8 pl-12">
+                            <a href="#" class="bg-ac-blue text-white text-sm font-plusJakarta py-2 px-8 rounded-lg hover:bg-ac-orange transition" aria-label="En savoir +">
+                                en savoir +
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Images -->
+                    <div class="lg:col-span-2 flex flex-col lg:flex-row items-start gap-6 lg:gap-4 justify-end">
+                        <!-- Image 1 -->
+                        <div class="w-64 h-96 rounded-xl rounded-bl-[250px] overflow-hidden translate-y-12 lg:translate-y-32">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie.jpg" alt="Vitrerie 1" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                        <!-- Image 2 -->
+                        <div class="w-64 h-96 rounded-xl rounded-tr-[250px] overflow-hidden -translate-y-6 lg:-translate-y-4">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie2.png" alt="Vitrerie 2" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+
 
         <!-- Réalisations -->
         <section class="py-8 px-4" style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/fond-couleur2.png'); background-size: cover; background-position: center;">
