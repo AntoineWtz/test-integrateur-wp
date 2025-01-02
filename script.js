@@ -1,10 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
     const burgerMenu = document.getElementById('burger-menu');
-    const menuBurgerButton = document.getElementById('menu-burger');
+    const menuBurgerButtonMobile = document.getElementById('menu-burger');
+    const menuBurgerButtonDesktop = document.getElementById('menu-burger-desktop');
     const closeMenuButton = document.getElementById('close-menu');
 
-    // Ouvrir le menu
-    menuBurgerButton.addEventListener('click', () => {
+    // Ouvrir le menu depuis le bouton mobile
+    menuBurgerButtonMobile.addEventListener('click', () => {
+        burgerMenu.classList.remove('translate-x-full');
+    });
+
+    // Ouvrir le menu depuis le bouton desktop
+    menuBurgerButtonDesktop.addEventListener('click', () => {
         burgerMenu.classList.remove('translate-x-full');
     });
 

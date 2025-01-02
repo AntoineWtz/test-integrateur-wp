@@ -12,7 +12,7 @@
     <?php
     $uploads = wp_upload_dir();
     ?>
-    <header class="fixed top-0 left-0 w-full bg-white p-4 shadow z-40">
+    <header class="fixed top-0 left-0 w-full bg-white p-4 shadow z-40 lg:hidden">
         <div class="flex items-center justify-between">
             <!-- Logo -->
             <div>
@@ -78,12 +78,57 @@
                     <img src="<?php echo $uploads['baseurl']; ?>/2024/12/facebook-navbar.png" alt="Facebook" class="h-8">
                 </a>
             </div>
-
         </nav>
     </div>
 
     <main>
-        <section class="relative bg-contain bg-center pt-8"
+        <!-- Hero Section Desktop-->
+        <section class="relative lg:bg-cover lg:bg-center lg:h-screen bg-none" style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/hero-decoration.png');" loading="lazy">
+            <!-- Hero Background Desktop -->
+            <div class="hidden lg:block relative z-10">
+                <!-- Header -->
+                <header class="absolute top-0 left-0 w-full p-20 z-40 flex items-center justify-end">
+                    <!-- CTA et Menu Burger -->
+                    <div class="flex items-center space-x-6">
+                        <a href="#contact" class="bg-ac-green text-white px-6 py-2 rounded-lg flex items-center">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/CTA.png" alt="CTA" class="h-12 mr-4">
+                            <span>Parlez-nous<br><span class="font-bold">de votre projet ?</span></span>
+                        </a>
+                        <button id="menu-burger-desktop" aria-label="Ouvrir le menu">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/MENU-BURGER.png" alt="Menu burger" class="h-16">
+                        </button>
+                    </div>
+                </header>
+
+                <!-- Hero Content -->
+                <div class="relative grid grid-cols-12 gap-4 items-center p-32">
+                    <!-- Left Column: Logo & Texte -->
+                    <div class="col-span-5 flex flex-col items-center ml-48 mb-48 space-y-6">
+                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/LOGO-desktop.png" alt="Logo Desktop" class="h-48">
+                    </div>
+                    <!-- Right Column: Images -->
+                    <div class="col-span-7 grid grid-cols-2 gap-4 relative">
+                        <!-- Image 1 -->
+                        <div class="relative rounded-xl overflow-hidden">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/peinture.png" alt="Peinture & Décoration" class="w-[453px] rounded-xl rounded-tl-[250px] h-[487px] object-cover">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <p class="text-white text-5xl font-bauhaus">Peinture<br>& Décoration</p>
+                            </div>
+                        </div>
+                        <!-- Image 2 -->
+                        <div class="relative rounded-xl overflow-hidden transform translate-y-32">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/revetement.jpg" alt="Revêtements Sols & Murs" class="w-[453px] rounded-xl rounded-br-[250px] h-[487px] object-cover">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <p class="text-white text-5xl font-bauhaus">Revêtements<br>Sols & Murs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hero Mobile -->
+        <section class="relative bg-contain bg-center pt-8 lg:hidden"
             style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/fond-couleur.png');" loading="lazy">
             <!-- Encarts -->
             <div class="grid grid-cols-1 gap-4">
@@ -115,8 +160,8 @@
         </section>
 
         <!-- Maison d'Expérience -->
-        <section class="text-center py-12 bg-white">
-            <h2 class="text-4xl font-bauhaus text-ac-darkblue mb-6 mx-8">Maison d'expérience</h2>
+        <section class="text-center py-12 lg:py-0 bg-white">
+            <h2 class="text-4xl lg:text-5xl font-bauhaus text-ac-darkblue mb-6 mx-8">Maison d'expérience</h2>
             <p class="inline-block bg-ac-green text-white text-lg font-bauhaus px-4 py-1 rounded-full">- depuis 1971 -</p>
             <div class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Texte -->
@@ -309,107 +354,103 @@
                 </a>
             </div>
         </section>
-
-        <!-- Footer -->
-        <footer>
-            <!-- Section coordonnées -->
-            <div class="text-ac-darkblue py-8 px-4 font-plusJakarta">
-                <div class="flex justify-center">
-                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/logo-mobile.png" alt="Logo" class="h-20" loading="lazy">
-                </div>
-                <!-- Coordonnées -->
-                <div class="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start lg:items-center lg:justify-center lg:max-w-6xl lg:mx-auto">
-                    <div class="text-left">
-                        <div class="ml-8 lg:ml-0 flex items-center gap-4 justify-start lg:justify-end">
-                            <div class="w-8 h-8 bg-ac-yellow rounded-lg flex items-center justify-center">
-                                <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-localisation.png" alt="Adresse" class="w-auto h-4" loading="lazy">
-                            </div>
-                            <p class="text-sm leading-relaxed text-ac-darkblue">
-                                16 Rue du Général Renault<br>
-                                37000 Tours
-                            </p>
-                        </div>
-                        <div class="ml-8 lg:ml-0 flex items-center gap-4 mt-4 justify-start lg:justify-end">
-                            <div class="w-8 h-8 bg-ac-green rounded-lg flex items-center justify-center">
-                                <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-tel.png" alt="Téléphone" class="w-4 h-auto" loading="lazy">
-                            </div>
-                            <p class="text-sm leading-relaxed text-ac-darkblue">02 47 66 63 70</p>
-                        </div>
-                    </div>
-                    <div class="text-left lg:text-center">
-                        <div class="ml-8 lg:ml-0 flex items-center gap-4 justify-start lg:justify-center">
-                            <div class="w-8 h-20 bg-ac-purple rounded-lg flex items-center justify-center">
-                                <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-timer.png" alt="Horaires" class="w-auto h-4" loading="lazy">
-                            </div>
-                            <p class="text-left text-sm leading-relaxed text-ac-darkblue">
-                                Du Lundi au Jeudi<br>
-                                8h00 – 12h30 | 13h30 – 17h00<br>
-                                Vendredi<br>8h00 à 12h00
-                            </p>
-                        </div>
-                    </div>
-                    <div class="text-center lg:text-left lg:pl-8">
-                        <p class="text-sm mb-2 text-ac-darkblue text-center lg:text-left">Une question ? Un conseil…</p>
-                        <a href="#" class="bg-ac-blue text-white text-base font-bauhaus py-2 px-12 rounded inline-flex items-center hover:bg-ac-darkblue transition justify-center lg:justify-start" aria-label="Contactez-nous">
-                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-mail.png" alt="Contactez-nous" class="w-5 h-auto mr-2" loading="lazy">
-                            Contactez-nous
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Section images -->
-            <div class="bg-ac-darkblue py-4 px-4">
-                <!-- Images -->
-                <div class="grid grid-cols-2 lg:grid-cols-9 gap-2">
-                    <div class="rounded-xl overflow-hidden lg:col-span-1">
-                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer1.png" alt="Image 1" class="w-full h-36 object-cover" loading="lazy">
-                    </div>
-                    <div class="rounded-xl overflow-hidden lg:col-span-1">
-                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer2.png" alt="Image 2" class="w-full h-36 object-cover" loading="lazy">
-                    </div>
-                    <div class="rounded-xl overflow-hidden lg:col-span-1">
-                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer3.png" alt="Image 3" class="w-full h-36 object-cover" loading="lazy">
-                    </div>
-                    <div class="rounded-xl overflow-hidden lg:col-span-1">
-                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer4.png" alt="Image 4" class="w-full h-36 object-cover" loading="lazy">
-                    </div>
-                    <div class="rounded-xl overflow-hidden lg:col-span-1">
-                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer5.png" alt="Image 5" class="w-full h-36 object-cover" loading="lazy">
-                    </div>
-                    <div class="rounded-xl overflow-hidden lg:col-span-1">
-                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer6.png" alt="Image 6" class="w-full h-36 object-cover" loading="lazy">
-                    </div>
-                    <div class="rounded-xl overflow-hidden hidden lg:block lg:col-span-1">
-                        <img src="<?php echo $uploads['baseurl']; ?>/2025/01/footer7.jpg" alt="Image 7" class="w-full h-36 object-cover" loading="lazy">
-                    </div>
-                    <div class="rounded-xl overflow-hidden hidden lg:block lg:col-span-1">
-                        <img src="<?php echo $uploads['baseurl']; ?>/2025/01/footer8.jpg" alt="Image 8" class="w-full h-36 object-cover" loading="lazy">
-                    </div>
-                    <div class="rounded-xl overflow-hidden hidden lg:block lg:col-span-1">
-                        <img src="<?php echo $uploads['baseurl']; ?>/2025/01/footer9.jpg" alt="Image 9" class="w-full h-36 object-cover" loading="lazy">
-                    </div>
-                </div>
-
-                <!-- Mentions légales et signature -->
-                <div class="text-center text-xs font-plusJakarta text-white mt-8 uppercase lg:flex lg:items-center lg:justify-between lg:px-16 lg:py-4">
-                    <div class="order-1 lg:mt-0 lg:order-2 lg:flex lg:flex-col lg:items-center lg:justify-center">
-                        <p>Mentions légales<br class="lg:hidden"><span class="hidden lg:inline mx-2">|</span>Politiques de confidentialité</p>
-                    </div>
-                    <div class="mt-4 order-2 lg:order-1 lg:flex lg:items-center lg:justify-center">
-                        <p class="lg:mr-8">&copy; 2024 – Tous droits réservés</p>
-                    </div>
-                    <div class="mt-4 lg:mt-0 lg:order-3 lg:flex lg:items-center lg:justify-center">
-                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/SiGNATURE.png" alt="Logo Creatisweb" class="mx-auto h-12 lg:mx-0" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-
-
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Section coordonnées -->
+        <div class="text-ac-darkblue py-8 px-4 font-plusJakarta">
+            <div class="flex justify-center">
+                <img src="<?php echo $uploads['baseurl']; ?>/2024/12/logo-mobile.png" alt="Logo" class="h-20" loading="lazy">
+            </div>
+            <!-- Coordonnées -->
+            <div class="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start lg:items-center lg:justify-center lg:max-w-6xl lg:mx-auto">
+                <div class="text-left">
+                    <div class="ml-8 lg:ml-0 flex items-center gap-4 justify-start lg:justify-end">
+                        <div class="w-8 h-8 bg-ac-yellow rounded-lg flex items-center justify-center">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-localisation.png" alt="Adresse" class="w-auto h-4" loading="lazy">
+                        </div>
+                        <p class="text-sm leading-relaxed text-ac-darkblue">
+                            16 Rue du Général Renault<br>
+                            37000 Tours
+                        </p>
+                    </div>
+                    <div class="ml-8 lg:ml-0 flex items-center gap-4 mt-4 justify-start lg:justify-end">
+                        <div class="w-8 h-8 bg-ac-green rounded-lg flex items-center justify-center">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-tel.png" alt="Téléphone" class="w-4 h-auto" loading="lazy">
+                        </div>
+                        <p class="text-sm leading-relaxed text-ac-darkblue">02 47 66 63 70</p>
+                    </div>
+                </div>
+                <div class="text-left lg:text-center">
+                    <div class="ml-8 lg:ml-0 flex items-center gap-4 justify-start lg:justify-center">
+                        <div class="w-8 h-20 bg-ac-purple rounded-lg flex items-center justify-center">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-timer.png" alt="Horaires" class="w-auto h-4" loading="lazy">
+                        </div>
+                        <p class="text-left text-sm leading-relaxed text-ac-darkblue">
+                            Du Lundi au Jeudi<br>
+                            8h00 – 12h30 | 13h30 – 17h00<br>
+                            Vendredi<br>8h00 à 12h00
+                        </p>
+                    </div>
+                </div>
+                <div class="text-center lg:text-left lg:pl-8">
+                    <p class="text-sm mb-2 text-ac-darkblue text-center lg:text-left">Une question ? Un conseil…</p>
+                    <a href="#" class="bg-ac-blue text-white text-base font-bauhaus py-2 px-12 rounded inline-flex items-center hover:bg-ac-darkblue transition justify-center lg:justify-start" aria-label="Contactez-nous">
+                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-mail.png" alt="Contactez-nous" class="w-5 h-auto mr-2" loading="lazy">
+                        Contactez-nous
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section images -->
+        <div class="bg-ac-darkblue py-4 px-4">
+            <!-- Images -->
+            <div class="grid grid-cols-2 lg:grid-cols-9 gap-2">
+                <div class="rounded-xl overflow-hidden lg:col-span-1">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer1.png" alt="Image 1" class="w-full h-36 object-cover" loading="lazy">
+                </div>
+                <div class="rounded-xl overflow-hidden lg:col-span-1">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer2.png" alt="Image 2" class="w-full h-36 object-cover" loading="lazy">
+                </div>
+                <div class="rounded-xl overflow-hidden lg:col-span-1">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer3.png" alt="Image 3" class="w-full h-36 object-cover" loading="lazy">
+                </div>
+                <div class="rounded-xl overflow-hidden lg:col-span-1">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer4.png" alt="Image 4" class="w-full h-36 object-cover" loading="lazy">
+                </div>
+                <div class="rounded-xl overflow-hidden lg:col-span-1">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer5.png" alt="Image 5" class="w-full h-36 object-cover" loading="lazy">
+                </div>
+                <div class="rounded-xl overflow-hidden lg:col-span-1">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer6.png" alt="Image 6" class="w-full h-36 object-cover" loading="lazy">
+                </div>
+                <div class="rounded-xl overflow-hidden hidden lg:block lg:col-span-1">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2025/01/footer7.jpg" alt="Image 7" class="w-full h-36 object-cover" loading="lazy">
+                </div>
+                <div class="rounded-xl overflow-hidden hidden lg:block lg:col-span-1">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2025/01/footer8.jpg" alt="Image 8" class="w-full h-36 object-cover" loading="lazy">
+                </div>
+                <div class="rounded-xl overflow-hidden hidden lg:block lg:col-span-1">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2025/01/footer9.jpg" alt="Image 9" class="w-full h-36 object-cover" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Mentions légales et signature -->
+            <div class="text-center text-xs font-plusJakarta text-white mt-8 uppercase lg:flex lg:items-center lg:justify-between lg:px-16 lg:py-4">
+                <div class="order-1 lg:mt-0 lg:order-2 lg:flex lg:flex-col lg:items-center lg:justify-center">
+                    <p>Mentions légales<br class="lg:hidden"><span class="hidden lg:inline mx-2">|</span>Politiques de confidentialité</p>
+                </div>
+                <div class="mt-4 order-2 lg:order-1 lg:flex lg:items-center lg:justify-center">
+                    <p class="lg:mr-8">&copy; 2024 – Tous droits réservés</p>
+                </div>
+                <div class="mt-4 lg:mt-0 lg:order-3 lg:flex lg:items-center lg:justify-center">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/SiGNATURE.png" alt="Logo Creatisweb" class="mx-auto h-12 lg:mx-0" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 <?php wp_footer(); ?>
