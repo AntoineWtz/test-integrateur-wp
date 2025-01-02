@@ -164,13 +164,13 @@
                         class="w-full h-80 lg:h-full object-cover rounded-[34px]"
                         loading="lazy">
                     <!-- Flèches pour le carrousel -->
-                    <div class="absolute bottom-4 left-4 flex space-x-4 lg:block hidden">
-                        <button aria-label="Image précédente" class="bg-white text-ac-purple rounded-full p-2 shadow hover:bg-ac-lightblue transition">
+                    <div class="absolute bottom-4 left-4 flex space-x-2 hidden lg:block lg:bg-white lg:rounded-full">
+                        <button aria-label="Image précédente" class="bg-white text-ac-purple rounded-full p-2 hover:bg-ac-lightblue transition">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                             </svg>
                         </button>
-                        <button aria-label="Image suivante" class="bg-white text-ac-purple rounded-full p-2 shadow hover:bg-ac-lightblue transition">
+                        <button aria-label="Image suivante" class="bg-white text-ac-purple rounded-full p-2 hover:bg-ac-lightblue transition">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                             </svg>
@@ -185,7 +185,7 @@
                     </div>
                 </div>
                 <!-- Texte et titre sur fond blanc pour desktop -->
-                <div class="relative bg-white lg:rounded-tl-[34px] lg:p-8 lg:-ml-40 lg:-mb-48">
+                <div class="relative bg-white lg:rounded-tl-[34px] lg:p-6 lg:-ml-40 lg:-mb-48">
                     <div class="hidden lg:flex items-center mb-6">
                         <img src="<?php echo $uploads['baseurl']; ?>/2024/12/photo-emilie.png"
                             alt="Photo d'Émilie"
@@ -314,13 +314,11 @@
         <footer>
             <!-- Section coordonnées -->
             <div class="text-ac-darkblue py-8 px-4 font-plusJakarta">
-                <!-- Logo -->
                 <div class="flex justify-center">
                     <img src="<?php echo $uploads['baseurl']; ?>/2024/12/logo-mobile.png" alt="Logo" class="h-20" loading="lazy">
                 </div>
                 <!-- Coordonnées -->
                 <div class="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start lg:items-center lg:justify-center lg:max-w-6xl lg:mx-auto">
-                    <!-- Colonne 1 -->
                     <div class="text-left">
                         <div class="ml-8 lg:ml-0 flex items-center gap-4 justify-start lg:justify-end">
                             <div class="w-8 h-8 bg-ac-yellow rounded-lg flex items-center justify-center">
@@ -338,7 +336,6 @@
                             <p class="text-sm leading-relaxed text-ac-darkblue">02 47 66 63 70</p>
                         </div>
                     </div>
-                    <!-- Colonne 2 -->
                     <div class="text-left lg:text-center">
                         <div class="ml-8 lg:ml-0 flex items-center gap-4 justify-start lg:justify-center">
                             <div class="w-8 h-20 bg-ac-purple rounded-lg flex items-center justify-center">
@@ -351,7 +348,6 @@
                             </p>
                         </div>
                     </div>
-                    <!-- Colonne 3 -->
                     <div class="text-center lg:text-left lg:pl-8">
                         <p class="text-sm mb-2 text-ac-darkblue text-center lg:text-left">Une question ? Un conseil…</p>
                         <a href="#" class="bg-ac-blue text-white text-base font-bauhaus py-2 px-12 rounded inline-flex items-center hover:bg-ac-darkblue transition justify-center lg:justify-start" aria-label="Contactez-nous">
@@ -397,13 +393,16 @@
                 </div>
 
                 <!-- Mentions légales et signature -->
-                <div class="text-center text-xs font-plusJakarta text-white mt-8 uppercase lg:flex lg:items-center lg:justify-between">
-                    <p>&copy; 2024 – Tous droits réservés</p>
-                    <div>
-                        <p>Mentions légales</p>
-                        <p>Politiques de confidentialités</p>
+                <div class="text-center text-xs font-plusJakarta text-white mt-8 uppercase lg:flex lg:items-center lg:justify-between lg:px-16 lg:py-4">
+                    <div class="order-1 lg:mt-0 lg:order-2 lg:flex lg:flex-col lg:items-center lg:justify-center">
+                        <p>Mentions légales<br class="lg:hidden"><span class="hidden lg:inline mx-2">|</span>Politiques de confidentialité</p>
                     </div>
-                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/SiGNATURE.png" alt="Logo Creatisweb" class="mx-auto h-12 lg:mx-0" loading="lazy">
+                    <div class="mt-4 order-2 lg:order-1 lg:flex lg:items-center lg:justify-center">
+                        <p class="lg:mr-8">&copy; 2024 – Tous droits réservés</p>
+                    </div>
+                    <div class="mt-4 lg:mt-0 lg:order-3 lg:flex lg:items-center lg:justify-center">
+                        <img src="<?php echo $uploads['baseurl']; ?>/2024/12/SiGNATURE.png" alt="Logo Creatisweb" class="mx-auto h-12 lg:mx-0" loading="lazy">
+                    </div>
                 </div>
             </div>
         </footer>
