@@ -83,7 +83,7 @@
 
     <main>
         <!-- Hero Section Desktop-->
-        <section class="relative lg:bg-cover lg:bg-center lg:h-screen bg-none" style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/hero-decoration.png');" loading="lazy">
+        <section class="relative lg:bg-cover lg:bg-center lg:h-full bg-none" style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/hero-decoration.png');" loading="lazy">
             <!-- Hero Background Desktop -->
             <div class="hidden lg:block relative z-10">
                 <!-- Header -->
@@ -230,7 +230,7 @@
                     </div>
                 </div>
                 <!-- Texte et titre sur fond blanc pour desktop -->
-                <div class="relative bg-white lg:rounded-tl-[34px] lg:p-6 lg:-ml-40 lg:-mb-48">
+                <div class="relative bg-white lg:rounded-tl-[34px] lg:p-6 lg:-ml-40 lg:mt-[430px]">
                     <div class="hidden lg:flex items-center mb-6">
                         <img src="<?php echo $uploads['baseurl']; ?>/2024/12/photo-emilie.png"
                             alt="Photo d'Émilie"
@@ -238,7 +238,7 @@
                             loading="lazy">
                         <h3 class="text-3xl font-bauhaus text-ac-darkblue">
                             Les Conseils Couleurs <br>
-                            <span class="text-ac-purple">d'Émilie</span>
+                            <span class="text-ac-purple text-4xl">d'Émilie</span>
                         </h3>
                     </div>
                     <p class="text-md text-ac-purple uppercase font-plusJakarta mb-2 lg:pl-8">Vivre la couleur au quotidien est essentiel !</p>
@@ -317,8 +317,8 @@
             </div>
         </section>
 
-        <!-- Réalisations -->
-        <section class="py-8 px-4" style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/fond-couleur2.png'); background-size: cover; background-position: center;">
+        <!-- Réalisations (Mobile) -->
+        <section class="py-8 px-4 lg:hidden" style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/fond-couleur2.png'); background-size: cover; background-position: center;">
             <!-- Texte -->
             <div class="text-white font-plusJakarta">
                 <h1 class="text-4xl text-center mb-6 font-bauhaus">Nos Réalisations</h1>
@@ -354,12 +354,97 @@
                 </a>
             </div>
         </section>
+
+        <!-- Réalisations (Desktop) -->
+        <section class="hidden lg:block py-48 px-32 relative" style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/fond-couleur2.png'); background-size: cover; background-position: center;">
+            <div class="grid grid-cols-2 items-center relative z-10">
+                <!-- Texte à gauche -->
+                <div class="text-white font-plusJakarta pb-32">
+                    <h1 class="text-5xl mb-8 font-bauhaus leading-tight ml-60">Nos Réalisations</h1>
+                    <p class="text-ac-yellow text-base uppercase leading-snug ml-72 pr-24">
+                        Nous vous accompagnons dans vos projets de peinture, rénovation & décoration !
+                    </p>
+                    <p class="text-base mt-4 leading-6 ml-72 pr-24">
+                        Plus d’hésitations : découvrez en images un petit aperçu de nos réalisations pour vous inspirer et mieux vous projeter dans vos futurs projets !
+                    </p>
+                    <div class="flex items-center gap-4 mt-8 ml-72 pr-24">
+                        <a href="#" class="bg-ac-yellow text-ac-darkblue text-sm font-bold py-3 px-8 rounded-lg text-center hover:bg-white hover:text-ac-darkblue transition">
+                            J'en veux +
+                        </a>
+                        <a href="#" class="flex items-center bg-transparent border-[3px] border-ac-yellow text-ac-yellow text-sm font-bold py-2 px-6 rounded-lg hover:bg-white hover:text-ac-yellow transition" aria-label="Suivez-nous">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/instagram-logo.png" alt="Logo Instagram" class="w-5 h-5 mr-2" loading="lazy">
+                            Suivez-nous !
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Images en grid -->
+                <div class="relative">
+                    <div class="grid grid-cols-3 gap-4">
+                        <!-- Image 1 -->
+                        <div class="relative rounded-xl overflow-hidden col-span-1">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations1.jpg" alt="Réalisation 1" class="w-[280px] h-[299px] object-cover rounded-tl-[250px]" loading="lazy">
+                        </div>
+                        <!-- Image 2 -->
+                        <div class="relative rounded-xl overflow-hidden col-span-1 row-span-1">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations2.jpg" alt="Réalisation 2" class="w-[280px] h-[332px] object-cover rounded-xl" loading="lazy">
+                        </div>
+                        <!-- Image 3 -->
+                        <div class="relative rounded-xl overflow-hidden col-span-1">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations4.jpg" alt="Réalisation 4" class="w-[280px] h-[211px] object-cover rounded-xl" loading="lazy">
+                        </div>
+                        <!-- Image 4 -->
+                        <div class="relative rounded-xl overflow-hidden col-span-1 row-span-2 transform -translate-y-8">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations3.jpg" alt="Réalisation 3" class="w-[280px] h-[448px] object-cover rounded-xl" loading="lazy">
+                        </div>
+                        <!-- Image 5 -->
+                        <div class="relative rounded-xl overflow-hidden col-span-1">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations5.jpg" alt="Réalisation 5" class="w-[280px] h-[232px] object-cover rounded-xl" loading="lazy">
+                        </div>
+                        <!-- Image 6 -->
+                        <div class="relative rounded-xl overflow-hidden col-span-1 transform -translate-y-[115px]">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations6.jpg" alt="Réalisation 6" class="w-[280px] h-[536px] object-cover rounded-xl" loading="lazy">
+                        </div>
+                        <!-- Image 7 -->
+                        <div class="relative rounded-xl overflow-hidden col-span-1 transform -translate-y-[18.5rem]">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations7.jpg" alt="Réalisation 7" class="w-[280px] h-[164px] object-cover rounded-xl" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section en position absolue -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 bottom-[-80px] w-full flex justify-center gap-12 px-32">
+                <!-- Rénovation -->
+                <div class="relative">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2025/01/renovation-desktop.jpg" alt="Rénovation"
+                        class="w-[500px] h-[500px] object-cover rounded-[10px] rounded-tl-[250px]" loading="lazy">
+                    <div class="absolute bottom-0 left-0 bg-white py-6 px-10 rounded-tr-[50px] flex items-center gap-2">
+                        <span class="text-ac-darkblue font-bauhaus text-2xl">Rénovation</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-ac-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                </div>
+                <!-- Remise en État -->
+                <div class="relative">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2025/01/renovation2-desktop.jpg" alt="Remise en État"
+                        class="w-[500px] h-[500px] object-cover rounded-[10px] rounded-tr-[250px]" loading="lazy">
+                    <div class="absolute bottom-0 right-0 bg-white py-6 px-10 rounded-tl-[50px] flex items-center gap-2">
+                        <span class="text-ac-darkblue font-bauhaus text-2xl">Remise en État</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-ac-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer>
         <!-- Section coordonnées -->
-        <div class="text-ac-darkblue py-8 px-4 font-plusJakarta">
+        <div class="text-ac-darkblue py-8 px-4 font-plusJakarta lg:mt-24">
             <div class="flex justify-center">
                 <img src="<?php echo $uploads['baseurl']; ?>/2024/12/logo-mobile.png" alt="Logo" class="h-20" loading="lazy">
             </div>
