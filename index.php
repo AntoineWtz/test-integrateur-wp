@@ -107,7 +107,7 @@
                         <img src="<?php echo $uploads['baseurl']; ?>/2024/12/LOGO-desktop.png" alt="Logo Desktop" class="h-48">
                     </div>
                     <!-- Right Column: Images -->
-                    <div class="col-span-7 grid grid-cols-2 gap-4 relative">
+                    <div class="col-span-7 grid grid-cols-2 gap-2 relative">
                         <!-- Image 1 -->
                         <div class="relative rounded-xl overflow-hidden">
                             <img src="<?php echo $uploads['baseurl']; ?>/2024/12/peinture.png" alt="Peinture & Décoration" class="w-[453px] rounded-xl rounded-tl-[250px] h-[487px] object-cover">
@@ -166,16 +166,16 @@
             <div class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Texte -->
                 <div>
-                    <p class="text-gray-700 text-base font-plusJakarta leading-relaxed uppercase md:ml-32 px-1 md:px-12">
+                    <p class="text-ac-darkblue text-base font-plusJakarta leading-relaxed uppercase lg:ml-32 px-1 lg:px-48">
                         Notre force<br>le conseil et un accompagnement privilégié sur mesure, adapté à vos envies et votre budget.
                     </p>
                 </div>
                 <!-- Avis Google Desktop -->
-                <div class="hidden lg:flex justify-center md:mr-32">
+                <div class="hidden lg:flex justify-center lg:mr-32">
                     <img src="<?php echo $uploads['baseurl']; ?>/2024/12/google.png" alt="Logo Google" class="h-20 w-auto">
                 </div>
             </div>
-            <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-2">
+            <div class="mt-12 grid grid-cols-2 lg:grid-cols-4">
                 <div class="text-center">
                     <p class="text-xl font-bauhaus text-ac-darkblue mt-4">Interlocuteur<br>unique</p>
                     <div class="mt-4 mx-auto w-6 h-2 lg:w-20 rounded-full bg-ac-purple"></div>
@@ -260,7 +260,7 @@
         <!-- Vitrerie -->
         <section class="relative">
             <!-- Rectangle bleu -->
-            <div class="absolute inset-x-0 top-36 mx-auto w-full h-32 bg-ac-lightblue -z-10 lg:top-0 lg:right-0 lg:left-auto lg:w-[420px] lg:h-[150px] lg:translate-y-0 lg:rounded-tl-full lg:rounded-bl-full"></div>
+            <div class="absolute inset-x-0 top-36 mx-auto w-full h-32 bg-ac-lightblue -z-10 lg:top-0 lg:right-0 lg:left-auto lg:w-[645px] lg:h-[234px] lg:translate-y-0 lg:rounded-tl-full lg:rounded-bl-full"></div>
 
             <div class="relative z-10 py-8 mx-4 my-8 lg:py-16 lg:mx-32">
                 <!-- Mobile layout -->
@@ -291,10 +291,10 @@
                 <!-- Desktop layout -->
                 <div class="hidden lg:grid lg:grid-cols-3 lg:gap-8 lg:items-center">
                     <!-- Texte -->
-                    <div class="text-left lg:col-span-1 lg:translate-x-32">
-                        <h3 class="text-3xl font-bauhaus text-ac-darkblue">La Vitrerie</h3>
-                        <p class="text-ac-blue text-md mt-4 uppercase pl-12">Remplacement<br>& Rénovation de vitres</p>
-                        <p class="text-black text-sm mt-4 leading-6 pl-12">
+                    <div class="text-left lg:col-span-1 lg:translate-x-60">
+                        <h3 class="text-4xl font-bauhaus text-ac-darkblue">La Vitrerie</h3>
+                        <p class="text-ac-blue text-base mt-4 uppercase pl-12">Remplacement<br>& Rénovation de vitres</p>
+                        <p class="text-black text-base mt-4 leading-6 pl-12">
                             Verres simples, verres de verrières, verres de marquises, verres imprimés, verres feuilletés,
                             verres de fenêtres de toit, doubles vitrages, miroirs...
                         </p>
@@ -306,11 +306,11 @@
                     </div>
                     <!-- Images -->
                     <div class="lg:col-span-2 flex flex-col lg:flex-row items-start gap-6 lg:gap-4 justify-end">
-                        <div class="w-64 h-96 rounded-xl rounded-bl-[250px] overflow-hidden translate-y-12 lg:translate-y-32">
-                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie.jpg" alt="Vitrerie 1" class="w-full h-full object-cover" loading="lazy">
+                        <div class="w-64 h-96 rounded-[10px] rounded-bl-[200px] overflow-hidden lg:translate-y-32 lg:-translate-x-[220px]">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie.jpg" alt="Vitrerie 1" class="w-[338px] h-[487px] object-cover" loading="lazy">
                         </div>
-                        <div class="w-64 h-96 rounded-xl rounded-tr-[250px] overflow-hidden -translate-y-6 lg:-translate-y-4">
-                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie2.png" alt="Vitrerie 2" class="w-full h-full object-cover" loading="lazy">
+                        <div class="w-64 h-96 rounded-[10px] rounded-tr-[200px] overflow-hidden lg:translate-y-8 lg:-translate-x-[220px]">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/vitrerie2.png" alt="Vitrerie 2" class="w-[338px] h-[487px] object-cover" loading="lazy">
                         </div>
                     </div>
                 </div>
