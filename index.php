@@ -80,7 +80,7 @@
     </div>
 
     <main>
-        <!-- Réseaux sociaux et flèche de retour vers le haut -->
+        <!-- Réseaux sociaux et flèche de retour en haut -->
         <div class="fixed top-1/2 right-8 transform -translate-y-1/2 z-50 hidden lg:flex flex-col items-center gap-4">
             <a href="#" aria-label="Facebook" class="hover:opacity-75">
                 <img src="<?php echo $uploads['baseurl']; ?>/2024/12/facebook-navbar.png" alt="Facebook" class="w-10 h-10">
@@ -115,20 +115,18 @@
 
                 <!-- Hero Content -->
                 <div class="relative grid grid-cols-12 gap-4 items-center p-32">
-                    <!-- Left Column: Logo & Texte -->
+                    <!-- Logo & Texte -->
                     <div class="col-span-5 flex flex-col items-center ml-48 mb-48 space-y-6">
                         <img src="<?php echo $uploads['baseurl']; ?>/2024/12/LOGO-desktop.png" alt="Logo Desktop" class="h-48">
                     </div>
-                    <!-- Right Column: Images -->
+                    <!-- Images -->
                     <div class="col-span-7 grid grid-cols-2 gap-2 relative">
-                        <!-- Image 1 -->
                         <div class="relative rounded-xl overflow-hidden">
                             <img src="<?php echo $uploads['baseurl']; ?>/2024/12/peinture.png" alt="Peinture & Décoration" class="w-[453px] rounded-xl rounded-tl-[250px] h-[487px] object-cover">
                             <div class="absolute inset-0 flex items-center justify-center">
                                 <p class="text-white text-5xl font-bauhaus">Peinture<br>& Décoration</p>
                             </div>
                         </div>
-                        <!-- Image 2 -->
                         <div class="relative rounded-xl overflow-hidden transform translate-y-32">
                             <img src="<?php echo $uploads['baseurl']; ?>/2024/12/revetement.jpg" alt="Revêtements Sols & Murs" class="w-[453px] rounded-xl rounded-br-[250px] h-[487px] object-cover">
                             <div class="absolute inset-0 flex items-center justify-center">
@@ -177,7 +175,6 @@
             <h2 class="text-4xl lg:text-5xl font-bauhaus text-ac-darkblue mb-6 mx-8">Maison d'expérience</h2>
             <p class="inline-block bg-ac-green text-white text-lg font-bauhaus px-4 py-1 rounded-full">- depuis 1971 -</p>
             <div class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <!-- Texte -->
                 <div>
                     <p class="text-ac-darkblue text-base font-plusJakarta leading-relaxed uppercase lg:ml-32 px-1 lg:px-48">
                         Notre force<br>le conseil et un accompagnement privilégié sur mesure, adapté à vos envies et votre budget.
@@ -215,13 +212,13 @@
         <!-- Conseils Couleurs Emilie -->
         <section class="relative bg-white mx-4 my-8 lg:mx-32 lg:my-16 overflow-hidden">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
-                <!-- Image principale -->
+                <!-- Image -->
                 <div class="relative lg:col-span-2">
                     <img src="<?php echo $uploads['baseurl']; ?>/2024/12/conseils-couleurs.png"
                         alt="Les Conseils Couleurs d'Émilie"
                         class="w-full h-80 lg:h-full object-cover rounded-[34px]"
                         loading="lazy">
-                    <!-- Flèches pour le carrousel -->
+                    <!-- Flèches carrousel -->
                     <div class="absolute bottom-4 left-4 flex space-x-2 hidden lg:block lg:bg-white lg:rounded-full">
                         <button aria-label="Image précédente" class="bg-white text-ac-purple rounded-full p-2 hover:bg-ac-lightblue transition">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -242,7 +239,7 @@
                         </h3>
                     </div>
                 </div>
-                <!-- Texte et titre sur fond blanc pour desktop -->
+                <!-- Texte et titre pour desktop -->
                 <div class="relative bg-white lg:rounded-tl-[34px] lg:p-6 lg:-ml-40 lg:mt-[430px]">
                     <div class="hidden lg:flex items-center mb-6">
                         <img src="<?php echo $uploads['baseurl']; ?>/2024/12/photo-emilie.png"
@@ -303,7 +300,6 @@
 
                 <!-- Desktop layout -->
                 <div class="hidden lg:grid lg:grid-cols-3 lg:gap-8 lg:items-center">
-                    <!-- Texte -->
                     <div class="text-left lg:col-span-1 lg:translate-x-60">
                         <h3 class="text-4xl font-bauhaus text-ac-darkblue">La Vitrerie</h3>
                         <p class="text-ac-blue text-base mt-4 uppercase pl-12">Remplacement<br>& Rénovation de vitres</p>
@@ -332,7 +328,6 @@
 
         <!-- Réalisations (Mobile) -->
         <section class="py-8 px-4 lg:hidden" style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/fond-couleur2.png'); background-size: cover; background-position: center;">
-            <!-- Texte -->
             <div class="text-white font-plusJakarta">
                 <h1 class="text-4xl text-center mb-6 font-bauhaus">Nos Réalisations</h1>
                 <p class="text-ac-yellow text-sm uppercase">
@@ -342,7 +337,6 @@
                     Plus d’hésitations : découvrez en images un petit aperçu de nos réalisations pour vous inspirer et mieux vous projeter dans vos futurs projets !
                 </p>
             </div>
-
             <!-- Images -->
             <div class="grid grid-cols-1 gap-6 mt-8">
                 <div class="relative rounded-xl overflow-hidden">
@@ -355,7 +349,6 @@
                     <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations3.jpg" alt="Réalisation 3" class="w-full h-64 object-cover" loading="lazy">
                 </div>
             </div>
-
             <!-- Boutons -->
             <div class="flex items-center justify-between gap-4 mt-8 px-0">
                 <a href="#" class="flex-1 bg-ac-yellow text-ac-darkblue text-xs font-bold py-3 px-1 rounded-lg text-center hover:bg-white hover:text-ac-darkblue transition">
@@ -371,7 +364,6 @@
         <!-- Réalisations (Desktop) -->
         <section class="hidden lg:block py-48 px-32 relative" style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/fond-couleur2.png'); background-size: cover; background-position: center;">
             <div class="grid grid-cols-2 items-center relative z-10">
-                <!-- Texte à gauche -->
                 <div class="text-white font-plusJakarta pb-32">
                     <h1 class="text-5xl mb-8 font-bauhaus leading-tight ml-60">Nos Réalisations</h1>
                     <p class="text-ac-yellow text-base uppercase leading-snug ml-72 pr-24">
@@ -394,31 +386,24 @@
                 <!-- Images en grid -->
                 <div class="relative">
                     <div class="grid grid-cols-3 gap-4">
-                        <!-- Image 1 -->
                         <div class="relative rounded-xl overflow-hidden col-span-1">
                             <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations1.jpg" alt="Réalisation 1" class="w-[280px] h-[299px] object-cover rounded-tl-[250px]" loading="lazy">
                         </div>
-                        <!-- Image 2 -->
                         <div class="relative rounded-xl overflow-hidden col-span-1 row-span-1">
                             <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations2.jpg" alt="Réalisation 2" class="w-[280px] h-[332px] object-cover rounded-xl" loading="lazy">
                         </div>
-                        <!-- Image 3 -->
                         <div class="relative rounded-xl overflow-hidden col-span-1">
                             <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations4.jpg" alt="Réalisation 4" class="w-[280px] h-[211px] object-cover rounded-xl" loading="lazy">
                         </div>
-                        <!-- Image 4 -->
                         <div class="relative rounded-xl overflow-hidden col-span-1 row-span-2 transform -translate-y-8">
                             <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations3.jpg" alt="Réalisation 3" class="w-[280px] h-[448px] object-cover rounded-xl" loading="lazy">
                         </div>
-                        <!-- Image 5 -->
                         <div class="relative rounded-xl overflow-hidden col-span-1">
                             <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations5.jpg" alt="Réalisation 5" class="w-[280px] h-[232px] object-cover rounded-xl" loading="lazy">
                         </div>
-                        <!-- Image 6 -->
                         <div class="relative rounded-xl overflow-hidden col-span-1 transform -translate-y-[115px]">
                             <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations6.jpg" alt="Réalisation 6" class="w-[280px] h-[536px] object-cover rounded-xl" loading="lazy">
                         </div>
-                        <!-- Image 7 -->
                         <div class="relative rounded-xl overflow-hidden col-span-1 transform -translate-y-[18.5rem]">
                             <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations7.jpg" alt="Réalisation 7" class="w-[280px] h-[164px] object-cover rounded-xl" loading="lazy">
                         </div>
@@ -426,7 +411,7 @@
                 </div>
             </div>
 
-            <!-- Section en position absolue -->
+            <!-- Section position absolute -->
             <div class="absolute left-1/2 transform -translate-x-1/2 bottom-[-80px] w-full flex justify-center gap-12 px-32">
                 <!-- Rénovation -->
                 <div class="relative">
@@ -461,7 +446,6 @@
             <div class="flex justify-center">
                 <img src="<?php echo $uploads['baseurl']; ?>/2024/12/logo-mobile.png" alt="Logo" class="h-20" loading="lazy">
             </div>
-            <!-- Coordonnées -->
             <div class="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start lg:items-center lg:justify-center lg:max-w-6xl lg:mx-auto">
                 <div class="text-left">
                     <div class="ml-8 lg:ml-0 flex items-center gap-4 justify-start lg:justify-end">
@@ -504,7 +488,6 @@
 
         <!-- Section images -->
         <div class="bg-ac-darkblue py-4 px-4">
-            <!-- Images -->
             <div class="grid grid-cols-2 lg:grid-cols-9 gap-2">
                 <div class="rounded-xl overflow-hidden lg:col-span-1">
                     <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer1.png" alt="Image 1" class="w-full h-36 object-cover" loading="lazy">
