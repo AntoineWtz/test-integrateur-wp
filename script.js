@@ -39,4 +39,24 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollToTopButton.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+
 });
+
+function toggleAccordion(id) {
+    const content = document.getElementById(`content-${id}`);
+    const arrow = document.getElementById(`arrow-${id}`);
+    const isOpen = !content.classList.contains('hidden');
+
+    // Ouvrir ou fermer l'élément cliqué
+    if (!isOpen) {
+        content.classList.remove('hidden');
+        content.classList.add('translate-y-0');
+        arrow.classList.add('rotate-180');
+    } else {
+        content.classList.add('hidden');
+        content.classList.remove('translate-y-0');
+        arrow.classList.remove('rotate-180');
+    }
+}
+
+

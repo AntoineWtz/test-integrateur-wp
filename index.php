@@ -412,28 +412,63 @@
                 </div>
             </div>
 
-            <!-- Section position absolute -->
             <div class="absolute left-1/2 transform -translate-x-1/2 bottom-[-80px] w-full flex justify-center gap-12 px-32">
                 <!-- Rénovation -->
-                <div class="relative">
+                <div class="relative group">
                     <img src="<?php echo $uploads['baseurl']; ?>/2025/01/renovation-desktop.jpg" alt="Rénovation"
                         class="w-[500px] h-[500px] object-cover rounded-[10px] rounded-tl-[250px]" loading="lazy">
-                    <div class="absolute bottom-0 left-0 bg-white py-6 px-10 rounded-tr-[50px] flex items-center gap-2">
+                    <div class="absolute bottom-0 left-0 bg-white py-6 px-16 rounded-tr-[50px] flex items-center justify-between gap-2 cursor-pointer"
+                        onclick="toggleAccordion('renovation')">
                         <span class="text-ac-darkblue font-bauhaus text-2xl">Rénovation</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-ac-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-ac-blue transition-transform"
+                            id="arrow-renovation" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </div>
+                    <div id="content-renovation" class="text-center absolute bottom-0 left-[225px] transform -translate-x-1/2 w-[450px] bg-white p-6 rounded-tr-[50px] hidden transition-transform duration-500 ease-in-out">
+                        <div class="flex items-center justify-center gap-2 mb-4">
+                            <span class="text-ac-darkblue font-bauhaus text-3xl">Rénovation</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-ac-blue transition-transform rotate-180"
+                                id="arrow-renovation-content" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                onclick="toggleAccordion('renovation')">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 15l-7-7-7 7" />
+                            </svg>
+                        </div>
+                        <p class="text-ac-darkblue text-xl mb-4 font-plusJakarta">
+                            Vous êtes propriétaire ? Vous avez un appartement ou une maison à vendre ?
+                        </p>
+                        <button class="bg-ac-purple text-white font-bold py-3 px-8 rounded-lg text-center hover:bg-ac-darkblue transition">
+                            découvrir
+                        </button>
+                    </div>
                 </div>
                 <!-- Remise en État -->
-                <div class="relative">
+                <div class="relative group">
                     <img src="<?php echo $uploads['baseurl']; ?>/2025/01/renovation2-desktop.jpg" alt="Remise en État"
                         class="w-[500px] h-[500px] object-cover rounded-[10px] rounded-tr-[250px]" loading="lazy">
-                    <div class="absolute bottom-0 right-0 bg-white py-6 px-10 rounded-tl-[50px] flex items-center gap-2">
+                    <div class="absolute bottom-0 right-0 bg-white py-6 px-16 rounded-tl-[50px] flex items-center justify-between gap-2 cursor-pointer"
+                        onclick="toggleAccordion('remise')">
                         <span class="text-ac-darkblue font-bauhaus text-2xl">Remise en État</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-ac-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-ac-blue transition-transform"
+                            id="arrow-remise" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
+                    </div>
+                    <div id="content-remise" class="text-center absolute bottom-0 right-[225px] transform translate-x-1/2 w-[450px] bg-white p-6 rounded-tl-[50px] hidden transition-transform duration-500 ease-in-out">
+                        <div class="flex items-center justify-center gap-2 mb-4">
+                            <span class="text-ac-darkblue font-bauhaus text-3xl text-center">Remise en État</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-ac-blue transition-transform rotate-180"
+                                id="arrow-remise-content" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                onclick="toggleAccordion('remise')">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 15l-7-7-7 7" />
+                            </svg>
+                        </div>
+                        <p class="text-ac-darkblue text-xl mb-4 font-plusJakarta">
+                            Vous avez été victime d’un sinistre dans votre maison ou votre appartement ?
+                        </p>
+                        <button class="bg-ac-purple text-white font-bold py-3 px-8 rounded-lg text-center hover:bg-ac-darkblue transition">
+                            découvrir
+                        </button>
                     </div>
                 </div>
             </div>
