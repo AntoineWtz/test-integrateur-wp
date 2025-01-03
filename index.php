@@ -95,6 +95,7 @@
                 </svg>
             </button>
         </div>
+        
         <!-- Hero Section Desktop-->
         <section class="relative lg:bg-cover lg:bg-center lg:h-full bg-none" style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/hero-decoration.png');" loading="lazy">
             <!-- Hero Background Desktop -->
