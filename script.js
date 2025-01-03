@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuBurgerButtonMobile = document.getElementById('menu-burger');
     const menuBurgerButtonDesktop = document.getElementById('menu-burger-desktop');
     const closeMenuButton = document.getElementById('close-menu');
+    const scrollToTopButton = document.getElementById('scroll-to-top');
 
     // Ouvrir le menu depuis le bouton mobile
     menuBurgerButtonMobile.addEventListener('click', () => {
@@ -17,5 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fermer le menu
     closeMenuButton.addEventListener('click', () => {
         burgerMenu.classList.add('translate-x-full');
+    });
+
+    // Scroll top bouton desktop
+    scrollToTopButton.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 });

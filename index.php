@@ -66,11 +66,9 @@
             <!-- Réseaux sociaux -->
             <div class="flex items-center space-x-4 mt-8">
                 <p class="text-white font-plusJakarta">Suivez-nous</p>
-                <!-- Flèche SVG -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-ac-yellow mx-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
-                <!-- Réseaux sociaux -->
                 <a href="#" class="hover:opacity-75">
                     <img src="<?php echo $uploads['baseurl']; ?>/2024/12/instagram-navbar.png" alt="Instagram" class="h-8">
                 </a>
@@ -82,6 +80,21 @@
     </div>
 
     <main>
+        <!-- Réseaux sociaux et flèche de retour vers le haut -->
+        <div class="fixed top-1/2 right-8 transform -translate-y-1/2 z-50 hidden lg:flex flex-col items-center gap-4">
+            <a href="#" aria-label="Facebook" class="hover:opacity-75">
+                <img src="<?php echo $uploads['baseurl']; ?>/2024/12/facebook-navbar.png" alt="Facebook" class="w-10 h-10">
+            </a>
+            <a href="#" aria-label="Instagram" class="hover:opacity-75">
+                <img src="<?php echo $uploads['baseurl']; ?>/2024/12/instagram-navbar.png" alt="Instagram" class="w-10 h-10">
+            </a>
+            <!-- Scroll Top Button -->
+            <button id="scroll-to-top" aria-label="Retour en haut" class="bg-ac-green rounded-lg w-10 h-10 flex items-center justify-center shadow-lg hover:bg-ac-orange transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+                </svg>
+            </button>
+        </div>
         <!-- Hero Section Desktop-->
         <section class="relative lg:bg-cover lg:bg-center lg:h-full bg-none" style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/hero-decoration.png');" loading="lazy">
             <!-- Hero Background Desktop -->
