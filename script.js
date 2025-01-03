@@ -21,16 +21,16 @@ document.addEventListener('DOMContentLoaded', () => {
         burgerMenu.classList.add('translate-x-full');
     });
 
-    // Fermer le menu et scroller à la section cible lorsque l'utilisateur clique sur un lien
+    // Fermer le menu et scroller à la section cible
     menuLinks.forEach(link => {
         link.addEventListener('click', (event) => {
-            const targetId = link.getAttribute('href').replace('#', ''); // Récupère l'ID de la section cible
+            const targetId = link.getAttribute('href').replace('#', '');
             const targetElement = document.getElementById(targetId);
 
             if (targetElement) {
-                event.preventDefault(); // Empêche le comportement par défaut du lien
-                targetElement.scrollIntoView({ behavior: 'smooth' }); // Scrolle vers la section
-                burgerMenu.classList.add('translate-x-full'); // Ferme le menu
+                event.preventDefault();
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+                burgerMenu.classList.add('translate-x-full');
             }
         });
     });
