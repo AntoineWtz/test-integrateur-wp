@@ -81,7 +81,7 @@
 
     <main>
         <!-- Réseaux sociaux et flèche de retour en haut -->
-        <div class="fixed top-1/2 right-8 transform -translate-y-1/2 z-50 hidden lg:flex flex-col items-center gap-4">
+        <div class="fixed top-1/3 right-16 transform -translate-y-1/2 z-50 hidden lg:flex flex-col items-center gap-4">
             <a href="#" aria-label="Facebook" class="hover:opacity-75">
                 <img src="<?php echo $uploads['baseurl']; ?>/2024/12/facebook-navbar.png" alt="Facebook" class="w-10 h-10">
             </a>
@@ -109,7 +109,7 @@
                             <span>Parlez-nous<br><span class="font-bold">de votre projet ?</span></span>
                         </a>
                         <button id="menu-burger-desktop" aria-label="Ouvrir le menu">
-                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/MENU-BURGER.png" alt="Menu burger" class="h-16">
+                            <img src="<?php echo $uploads['baseurl']; ?>/2024/12/MENU-BURGER.png" alt="Menu burger" class="h-20 mr-8">
                         </button>
                     </div>
                 </header>
@@ -140,7 +140,7 @@
         </section>
 
         <!-- Hero Mobile -->
-        <section id="home" class="relative bg-contain bg-center pt-8 lg:hidden"
+        <section id="home" class="relative bg-contain bg-center pt-16 lg:hidden"
             style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/fond-couleur.png');" loading="lazy">
             <!-- Encarts -->
             <div class="grid grid-cols-1 gap-4">
@@ -188,19 +188,19 @@
             </div>
             <div class="mt-12 grid grid-cols-2 lg:grid-cols-4">
                 <div class="text-center">
-                    <p class="text-xl font-bauhaus text-ac-darkblue mt-4">Interlocuteur<br>unique</p>
+                    <p class="text-[25px] font-bauhaus text-ac-darkblue mt-4">Interlocuteur<br>unique</p>
                     <div class="mt-4 mx-auto w-6 h-2 lg:w-20 rounded-full bg-ac-purple"></div>
                 </div>
                 <div class="text-center">
-                    <p class="text-xl font-bauhaus text-ac-darkblue mt-4">Showroom<br>privatisé</p>
+                    <p class="text-[25px] font-bauhaus text-ac-darkblue mt-4">Showroom<br>privatisé</p>
                     <div class="mt-4 mx-auto w-6 h-2 lg:w-20 rounded-full bg-ac-yellow"></div>
                 </div>
                 <div class="text-center">
-                    <p class="text-xl font-bauhaus text-ac-darkblue mt-4">Conseils<br>Avisés</p>
+                    <p class="text-[25px] font-bauhaus text-ac-darkblue mt-4">Conseils<br>Avisés</p>
                     <div class="mt-4 mx-auto w-6 h-2 lg:w-20 rounded-full bg-ac-orange"></div>
                 </div>
                 <div class="text-center">
-                    <p class="text-xl font-bauhaus text-ac-darkblue mt-4">Service<br>de Vitrerie</p>
+                    <p class="text-[25px] font-bauhaus text-ac-darkblue mt-4">Service<br>de Vitrerie</p>
                     <div class="mt-4 mx-auto w-6 h-2 lg:w-20 rounded-full bg-ac-green"></div>
                 </div>
             </div>
@@ -234,9 +234,9 @@
                     </div>
                     <!-- Conteneur texte superposé pour mobile -->
                     <div class="absolute bottom-0 right-0 bg-white pt-2 pl-6 rounded-tl-3xl text-left w-2/3 lg:hidden">
-                        <h3 class="text-3xl font-base text-ac-darkblue font-bauhaus">
+                        <h3 class="text-4xl font-base text-ac-darkblue font-bauhaus">
                             Les Conseils <br />Couleurs <br />
-                            <span class="text-ac-purple">d'Émilie</span>
+                            <span class="text-ac-purple text-5xl">d'Émilie</span>
                         </h3>
                     </div>
                 </div>
@@ -247,19 +247,19 @@
                             alt="Photo d'Émilie"
                             class="h-16 w-16 rounded-tl-lg object-cover mr-4 lg:h-20 lg:w-20"
                             loading="lazy">
-                        <h3 class="text-3xl font-bauhaus text-ac-darkblue">
+                        <h3 class="text-4xl font-bauhaus text-ac-darkblue">
                             Les Conseils Couleurs <br>
-                            <span class="text-ac-purple text-4xl">d'Émilie</span>
+                            <span class="text-ac-purple text-5xl">d'Émilie</span>
                         </h3>
                     </div>
-                    <p class="text-md text-ac-purple uppercase font-plusJakarta mb-2 lg:pl-8">Vivre la couleur au quotidien est essentiel !</p>
-                    <p class="text-sm text-black leading-2 font-plusJakarta mb-6 lg:mr-52 lg:pl-8">
+                    <p class="text-[16px] text-ac-purple uppercase font-plusJakarta mb-4 lg:pl-8">Vivre la couleur au quotidien est essentiel !</p>
+                    <p class="text-[16px] text-black leading-2 font-plusJakarta mb-6 lg:mr-60 lg:pl-8">
                         Avec passion, je vous accompagne et vous conseille dans vos projets de décoration d’intérieur, pour créer des ambiances harmonieuses en accord avec vos envies et votre budget.
                     </p>
                     <!-- Bouton -->
-                    <div class="text-center lg:text-left lg:pl-8">
+                    <div class="text-center lg:text-left lg:p-8">
                         <a href="#"
-                            class="bg-ac-purple text-white font-bauhaus py-2 px-20 lg:px-8 lg:py-2 rounded-lg hover:bg-ac-orange transition inline-block lg:w-auto"
+                            class="bg-ac-purple text-white font-bauhaus py-2 px-20 lg:px-8 lg:py-2 rounded-lg hover:bg-ac-orange transition inline-block lg:w-auto lg:mb-16"
                             aria-label="Découvrir">
                             découvrir
                         </a>
@@ -285,9 +285,9 @@
                         </div>
                     </div>
                     <div class="mt-16 font-plusJakarta">
-                        <h3 class="text-3xl text-center font-bauhaus text-ac-darkblue">La Vitrerie</h3>
-                        <p class="text-ac-blue text-md mt-4 uppercase text-left">Remplacement<br>& Rénovation de vitres</p>
-                        <p class="text-black text-sm mt-4 leading-6 text-left">
+                        <h3 class="text-[40px] text-center font-bauhaus text-ac-darkblue">La Vitrerie</h3>
+                        <p class="text-ac-blue text-[16px] mt-4 uppercase text-left">Remplacement<br>& Rénovation de vitres</p>
+                        <p class="text-black text-[16px] mt-4 leading-6 text-left">
                             Verres simples, verres de verrières, verres de marquises, verres imprimés, verres feuilletés,
                             verres de fenêtres de toit, doubles vitrages, miroirs...
                         </p>
@@ -341,13 +341,13 @@
             <!-- Images -->
             <div class="grid grid-cols-1 gap-6 mt-8">
                 <div class="relative rounded-xl overflow-hidden">
-                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations1.jpg" alt="Réalisation 1" class="w-full h-64 object-cover" loading="lazy">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations1.jpg" alt="Réalisation 1" class="w-full h-80 object-cover" loading="lazy">
                 </div>
                 <div class="relative rounded-xl overflow-hidden">
-                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations2.jpg" alt="Réalisation 2" class="w-full h-64 object-cover" loading="lazy">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations2.jpg" alt="Réalisation 2" class="w-full h-80 object-cover" loading="lazy">
                 </div>
                 <div class="relative rounded-xl overflow-hidden">
-                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations3.jpg" alt="Réalisation 3" class="w-full h-64 object-cover" loading="lazy">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/realisations3.jpg" alt="Réalisation 3" class="w-full h-80 object-cover" loading="lazy">
                 </div>
             </div>
             <!-- Boutons -->
@@ -491,31 +491,31 @@
         <div class="bg-ac-darkblue py-4 px-4">
             <div class="grid grid-cols-2 lg:grid-cols-9 gap-2">
                 <div class="rounded-xl overflow-hidden lg:col-span-1">
-                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer1.png" alt="Image 1" class="w-full h-36 object-cover" loading="lazy">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer1.png" alt="Image 1" class="w-full h-36 lg:h-48 object-cover" loading="lazy">
                 </div>
                 <div class="rounded-xl overflow-hidden lg:col-span-1">
-                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer2.png" alt="Image 2" class="w-full h-36 object-cover" loading="lazy">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer2.png" alt="Image 2" class="w-full h-36 lg:h-48 object-cover" loading="lazy">
                 </div>
                 <div class="rounded-xl overflow-hidden lg:col-span-1">
-                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer3.png" alt="Image 3" class="w-full h-36 object-cover" loading="lazy">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer3.png" alt="Image 3" class="w-full h-36 lg:h-48 object-cover" loading="lazy">
                 </div>
                 <div class="rounded-xl overflow-hidden lg:col-span-1">
-                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer4.png" alt="Image 4" class="w-full h-36 object-cover" loading="lazy">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer4.png" alt="Image 4" class="w-full h-36 lg:h-48 object-cover" loading="lazy">
                 </div>
                 <div class="rounded-xl overflow-hidden lg:col-span-1">
-                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer5.png" alt="Image 5" class="w-full h-36 object-cover" loading="lazy">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer5.png" alt="Image 5" class="w-full h-36 lg:h-48 object-cover" loading="lazy">
                 </div>
                 <div class="rounded-xl overflow-hidden lg:col-span-1">
-                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer6.png" alt="Image 6" class="w-full h-36 object-cover" loading="lazy">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2024/12/footer6.png" alt="Image 6" class="w-full h-36 lg:h-48 object-cover" loading="lazy">
                 </div>
                 <div class="rounded-xl overflow-hidden hidden lg:block lg:col-span-1">
-                    <img src="<?php echo $uploads['baseurl']; ?>/2025/01/footer7.jpg" alt="Image 7" class="w-full h-36 object-cover" loading="lazy">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2025/01/footer7.jpg" alt="Image 7" class="w-full h-36 lg:h-48 object-cover" loading="lazy">
                 </div>
                 <div class="rounded-xl overflow-hidden hidden lg:block lg:col-span-1">
-                    <img src="<?php echo $uploads['baseurl']; ?>/2025/01/footer8.jpg" alt="Image 8" class="w-full h-36 object-cover" loading="lazy">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2025/01/footer8.jpg" alt="Image 8" class="w-full h-36 lg:h-48 object-cover" loading="lazy">
                 </div>
                 <div class="rounded-xl overflow-hidden hidden lg:block lg:col-span-1">
-                    <img src="<?php echo $uploads['baseurl']; ?>/2025/01/footer9.jpg" alt="Image 9" class="w-full h-36 object-cover" loading="lazy">
+                    <img src="<?php echo $uploads['baseurl']; ?>/2025/01/footer9.jpg" alt="Image 9" class="w-full h-36 lg:h-48 object-cover" loading="lazy">
                 </div>
             </div>
 
