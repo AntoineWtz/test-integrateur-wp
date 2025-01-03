@@ -58,7 +58,7 @@
             </div>
             <!-- Bouton contact -->
             <div class="pt-20">
-                <a href="#contact" class="flex items-center space-x-4 bg-transparent text-ac-purple border-4 border-ac-purple py-2 px-6 rounded-lg shadow hover:bg-ac-lightblue transition">
+                <a href="" class="flex items-center space-x-4 bg-transparent text-ac-purple border-4 border-ac-purple py-2 px-6 rounded-lg shadow hover:bg-ac-lightblue transition">
                     <img src="<?php echo $uploads['baseurl']; ?>/2024/12/icon-contact.png" alt="Contact" class="h-6 w-6">
                     <span class="font-bauhaus text-white">Parlez-nous<br>de votre projet ?</span>
                 </a>
@@ -95,16 +95,16 @@
                 </svg>
             </button>
         </div>
-        
+
         <!-- Hero Section Desktop-->
-        <section class="relative lg:bg-cover lg:bg-center lg:h-full bg-none" style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/hero-decoration.png');" loading="lazy">
+        <section id="home" class="relative lg:bg-cover lg:bg-center lg:h-full bg-none" style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/hero-decoration.png');" loading="lazy">
             <!-- Hero Background Desktop -->
             <div class="hidden lg:block relative z-10">
                 <!-- Header -->
                 <header class="absolute top-0 left-0 w-full p-20 z-40 flex items-center justify-end">
                     <!-- CTA et Menu Burger -->
                     <div class="flex items-center space-x-6">
-                        <a href="#contact" class="bg-ac-green text-white px-6 py-2 rounded-lg flex items-center">
+                        <a href="" class="bg-ac-green text-white px-6 py-2 rounded-lg flex items-center">
                             <img src="<?php echo $uploads['baseurl']; ?>/2024/12/CTA.png" alt="CTA" class="h-12 mr-4">
                             <span>Parlez-nous<br><span class="font-bold">de votre projet ?</span></span>
                         </a>
@@ -140,7 +140,7 @@
         </section>
 
         <!-- Hero Mobile -->
-        <section class="relative bg-contain bg-center pt-8 lg:hidden"
+        <section id="home" class="relative bg-contain bg-center pt-8 lg:hidden"
             style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/fond-couleur.png');" loading="lazy">
             <!-- Encarts -->
             <div class="grid grid-cols-1 gap-4">
@@ -172,7 +172,7 @@
         </section>
 
         <!-- Maison d'Expérience -->
-        <section class="text-center py-12 lg:py-0 bg-white">
+        <section id="services" class="text-center py-12 lg:py-0 bg-white">
             <h2 class="text-4xl lg:text-5xl font-bauhaus text-ac-darkblue mb-6 mx-8">Maison d'expérience</h2>
             <p class="inline-block bg-ac-green text-white text-lg font-bauhaus px-4 py-1 rounded-full">- depuis 1971 -</p>
             <div class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -211,7 +211,7 @@
         </section>
 
         <!-- Conseils Couleurs Emilie -->
-        <section class="relative bg-white mx-4 my-8 lg:mx-32 lg:my-16 overflow-hidden">
+        <section id="conseils" class="relative bg-white mx-4 my-8 lg:mx-32 lg:my-16 overflow-hidden">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
                 <!-- Image -->
                 <div class="relative lg:col-span-2">
@@ -300,7 +300,7 @@
                 </div>
 
                 <!-- Desktop layout -->
-                <div class="hidden lg:grid lg:grid-cols-3 lg:gap-8 lg:items-center">
+                <div id="realisations" class="hidden lg:grid lg:grid-cols-3 lg:gap-8 lg:items-center">
                     <div class="text-left lg:col-span-1 lg:translate-x-60">
                         <h3 class="text-4xl font-bauhaus text-ac-darkblue">La Vitrerie</h3>
                         <p class="text-ac-blue text-base mt-4 uppercase pl-12">Remplacement<br>& Rénovation de vitres</p>
@@ -328,7 +328,7 @@
         </section>
 
         <!-- Réalisations (Mobile) -->
-        <section class="py-8 px-4 lg:hidden" style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/fond-couleur2.png'); background-size: cover; background-position: center;">
+        <section id="realisations" class="py-8 px-4 lg:hidden" style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/fond-couleur2.png'); background-size: cover; background-position: center;">
             <div class="text-white font-plusJakarta">
                 <h1 class="text-4xl text-center mb-6 font-bauhaus">Nos Réalisations</h1>
                 <p class="text-ac-yellow text-sm uppercase">
@@ -363,7 +363,7 @@
         </section>
 
         <!-- Réalisations (Desktop) -->
-        <section class="hidden lg:block py-48 px-32 relative" style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/fond-couleur2.png'); background-size: cover; background-position: center;">
+        <section id="realisations" class="hidden lg:block py-48 px-32 relative" style="background-image: url('<?php echo $uploads['baseurl']; ?>/2024/12/fond-couleur2.png'); background-size: cover; background-position: center;">
             <div class="grid grid-cols-2 items-center relative z-10">
                 <div class="text-white font-plusJakarta pb-32">
                     <h1 class="text-5xl mb-8 font-bauhaus leading-tight ml-60">Nos Réalisations</h1>
